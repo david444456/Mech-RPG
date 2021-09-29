@@ -1,0 +1,43 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ba3c45a0949c8e44af9ab41baabc200, type: 3}
+  m_Name: Sword 4
+  m_EditorClassIdentifier: 
+  instigatorCharacterWeapon: {fileID: 0}
+  UniqueIdentifier: 12
+  AttackArea: 1
+  AttackWithCombo: 1
+  damageArea: 5
+  weaponDamage: 10
+  spriteWeapon: {fileID: 21300000, guid: 2f1e0d7aacd0a29489eaa51811c80945, type: 3}
+  CooldownAbilities:
+  - 0
+  - 0
+  - 0
+  - 0
+  spawnWeaponPickup: {fileID: 6633864155807009822, guid: 9299caa1de06f75439ae241a2957ce20, type: 3}
+  attackAnimationWeapon: attack
+  typeWeapon: 0
+  damageForTypeWeapon: 15
+  priceWeaponStore: 105
+  resourcesCostsInStore: 0a0000000a000000
+  descriptionWeapon: "This weapon is a normal weapon, with \r\ncombos on R, E and
+    W.\r"
+  positionStore: {x: 0, y: 0.5, z: 0}
+  rotationStore: {x: 0, y: 0, z: -90}
+  spawnSimpleWeapon: {fileID: 8415581719171519200, guid: bb4f56ee8c534dd449b7076d9e2abf36, type: 3}
+  animatorOverride: {fileID: 22100000, guid: 37abd5a841b760b40805fbe9c2e00910, type: 2}
+  weaponObject: {fileID: 2189008916733135437, guid: 43f3b015b93435643800671af529dbe8, type: 3}
+  weaponRange: 1
+  percentageBonus: 0
+  isRightHanded: 1
+  projectile: {fileID: 0}

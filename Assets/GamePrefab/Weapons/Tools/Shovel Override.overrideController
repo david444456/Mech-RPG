@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!221 &22100000
+AnimatorOverrideController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Shovel Override
+  m_Controller: {fileID: 9100000, guid: 01eaf9d483e9d7346bcfd33f6d92011e, type: 2}
+  m_Clips:
+  - m_OriginalClip: {fileID: 7400000, guid: f723fef5028ccd1408e15ca7d5b4b415, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 00f9f581866fffc45b707a26ec34cd74, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 1eb6d0a37b560f94e97d27e06115352a, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 00f9f581866fffc45b707a26ec34cd74, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 71e462880ea6c764798148ea508246ed, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 71e462880ea6c764798148ea508246ed, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: bb6a4e759a2750544ac1ef405fe760a4, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 4a091265387d7c04baa536a7efd68125, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 4ecfd8a4092e59b4db6a423a15a36965, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 00f9f581866fffc45b707a26ec34cd74, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: f4035de738ae1fa41b7e0ae8df9586d3, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: f4035de738ae1fa41b7e0ae8df9586d3, type: 2}

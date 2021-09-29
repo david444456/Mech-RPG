@@ -1,0 +1,44 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ce71d3c8c05e1894ebb368a8c5b75e2c, type: 3}
+  m_Name: InfoPortal
+  m_EditorClassIdentifier: 
+  structConversations:
+  - StartConversation: 'Este portal lleva a un mundo desconocido... '
+    index: 0
+    option1:
+      option: Mas info...
+      nextText: 1
+      IsTheEnd: 0
+      containsMision: 0
+    option2:
+      option: OK.
+      nextText: 0
+      IsTheEnd: 1
+      containsMision: 0
+  - StartConversation: 'En realidad es un nivel sin terminar,
+
+      lo deje por si querias verlo... puede entrar cuando consigas el salto.'
+    index: 1
+    option1:
+      option: Entiendo..
+      nextText: 0
+      IsTheEnd: 1
+      containsMision: 0
+    option2:
+      option: Ok.
+      nextText: 0
+      IsTheEnd: 1
+      containsMision: 0
+  StringAnimatorPlay: ExitStore
+  transformCamera: {fileID: 0}
+  missions: {fileID: 0}

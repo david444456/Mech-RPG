@@ -1,0 +1,82 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ce71d3c8c05e1894ebb368a8c5b75e2c, type: 3}
+  m_Name: InfoBlackBoy
+  m_EditorClassIdentifier: 
+  structConversations:
+  - StartConversation: Mira un arbol que camina! interesante ciudad...
+    index: 0
+    option1:
+      option: "\xBFQueres ver?"
+      nextText: 1
+      IsTheEnd: 0
+      containsMision: 0
+    option2:
+      option: Y vos sos una persona
+      nextText: 2
+      IsTheEnd: 0
+      containsMision: 0
+  - StartConversation: "Na, estoy al pedo, si queres te puedo regalar \nuna bolsa
+      de contenido sospechoso..."
+    index: 1
+    option1:
+      option: A ver..
+      nextText: 3
+      IsTheEnd: 0
+      containsMision: 0
+    option2:
+      option: Eso es ilegal
+      nextText: 0
+      IsTheEnd: 1
+      containsMision: 0
+  - StartConversation: 'Si mi cuidad fue destruida y el unico
+
+      hogar que pude encontrar es este...'
+    index: 2
+    option1:
+      option: Mira vos che
+      nextText: 3
+      IsTheEnd: 1
+      containsMision: 0
+    option2:
+      option: Que paja eso..
+      nextText: 4
+      IsTheEnd: 0
+      containsMision: 0
+  - StartConversation: "Na mentira yo no soy as\xED... pero como\nte promet\xED algo
+      te dejo un arma detras,\nse que te va a gustar a un arbol.."
+    index: 3
+    option1:
+      option: Un gusto pibe
+      nextText: 3
+      IsTheEnd: 1
+      containsMision: 0
+    option2:
+      option: Me estas jodiendo?
+      nextText: 0
+      IsTheEnd: 1
+      containsMision: 0
+  - StartConversation: "Si bueno as\xED es la vida no?"
+    index: 4
+    option1:
+      option: Ponele
+      nextText: 3
+      IsTheEnd: 1
+      containsMision: 0
+    option2:
+      option: Seee...
+      nextText: 0
+      IsTheEnd: 1
+      containsMision: 0
+  StringAnimatorPlay: ExitStore
+  transformCamera: {fileID: 0}
+  missions: {fileID: 0}

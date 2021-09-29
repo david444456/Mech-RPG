@@ -1,0 +1,45 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ba3c45a0949c8e44af9ab41baabc200, type: 3}
+  m_Name: Shovel
+  m_EditorClassIdentifier: 
+  instigatorCharacterWeapon: {fileID: 0}
+  UniqueIdentifier: 12
+  AttackArea: 1
+  AttackWithCombo: 0
+  damageArea: 0
+  weaponDamage: 10
+  spriteWeapon: {fileID: 21300000, guid: 26ddff657fe36d745ac8ab8024ebb204, type: 3}
+  CooldownAbilities:
+  - 0
+  - 0
+  - 0
+  - 0
+  spawnWeaponPickup: {fileID: 263118500249339565, guid: be569a5876adc144093ded6199acfa9b,
+    type: 3}
+  attackAnimationWeapon: shovel
+  typeWeapon: 4
+  damageForTypeWeapon: 300
+  priceWeaponStore: 105
+  resourcesCostsInStore: 0a0000000a000000
+  descriptionWeapon: "Esta arma es un arma normal, con \ncombos en R, E y W.\n"
+  positionStore: {x: 0.202, y: 0, z: -0.112}
+  rotationStore: {x: 0, y: 90, z: 0}
+  spawnSimpleWeapon: {fileID: 4481248929385768820, guid: c347ff088af1130489bfcec4b48cf06b,
+    type: 3}
+  animatorOverride: {fileID: 22100000, guid: 81e886feb63dcf3418b4605fea1598cd, type: 2}
+  weaponObject: {fileID: 2432973479552856877, guid: b98bc0a2ff0b0e147a358eb35f0865cb,
+    type: 3}
+  weaponRange: 0.5
+  percentageBonus: 0
+  isRightHanded: 1
+  projectile: {fileID: 0}

@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ce71d3c8c05e1894ebb368a8c5b75e2c, type: 3}
+  m_Name: ComputerBoss
+  m_EditorClassIdentifier: 
+  structConversations:
+  - StartConversation: "Robot con fases, alto da\xF1o, giro lento.\nCapo del barrio."
+    index: 0
+    option1:
+      option: "Otro d\xEDa"
+      nextText: 0
+      IsTheEnd: 1
+      containsMision: 0
+    option2:
+      option: Dale yo lo mato.
+      nextText: 0
+      IsTheEnd: 1
+      containsMision: 1
+  StringAnimatorPlay: ExitStore
+  transformCamera: {fileID: 0}
+  missions: {fileID: 11400000, guid: b48c9ff5ef2a77642877aa2a733ebdcf, type: 2}

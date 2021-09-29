@@ -1,0 +1,45 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ba3c45a0949c8e44af9ab41baabc200, type: 3}
+  m_Name: Scythe
+  m_EditorClassIdentifier: 
+  instigatorCharacterWeapon: {fileID: 0}
+  UniqueIdentifier: 5
+  AttackArea: 1
+  AttackWithCombo: 0
+  damageArea: 5
+  weaponDamage: 4
+  spriteWeapon: {fileID: 21300000, guid: 7b5bfc475ae856b43aa5454c1801a2e8, type: 3}
+  CooldownAbilities:
+  - 0
+  - 10
+  - 1
+  - 1
+  spawnWeaponPickup: {fileID: 3587838546383822434, guid: af0d619c7a4eb47438039cc81fffa12b,
+    type: 3}
+  attackAnimationWeapon: attack
+  typeWeapon: 2
+  damageForTypeWeapon: 6
+  priceWeaponStore: 125
+  resourcesCostInStore: 0a0000000a000000
+  descriptionWeapon: "Guada\xF1a, esta arma est\xE1 encantada.\nTiene un origen desconocido,
+    solo hace cosas\nmagicas..."
+  rotationStore: {x: 62, y: -57, z: -22}
+  spawnSimpleWeapon: {fileID: 2504513820107961358, guid: c68ed62b4aa87414286a248223d1a42b,
+    type: 3}
+  animatorOverride: {fileID: 22100000, guid: d9479a1abbea8b248a3659180224e1a3, type: 2}
+  weaponObject: {fileID: 8554138751494390961, guid: 76d572bba992a144e8214c0c9e20fb7a,
+    type: 3}
+  weaponRange: 1
+  percentageBonus: 0.1
+  isRightHanded: 1
+  projectile: {fileID: 0}

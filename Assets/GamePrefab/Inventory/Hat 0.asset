@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba9a55d15958af74f8d887a973bd034f, type: 3}
+  m_Name: Hat 0
+  m_EditorClassIdentifier: 
+  _index: 0
+  _typeItemInventory: 1
+  _gameObjectToSpawn: {fileID: 5280461700867230179, guid: a82143671195b97448611caf4f7ed583, type: 3}
+  _nameItem: Hat amazing
+  description: This is a amazing hat
+  _spriteImageInInventory: {fileID: 6676419181633189427, guid: d0499d22d89ef0a48a8576c94d377a73, type: 3}
+  _typeArmor: 0
+  _valueArmor: 20

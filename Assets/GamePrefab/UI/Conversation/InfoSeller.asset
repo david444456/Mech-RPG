@@ -1,0 +1,67 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ce71d3c8c05e1894ebb368a8c5b75e2c, type: 3}
+  m_Name: InfoSeller
+  m_EditorClassIdentifier: 
+  structConversations:
+  - StartConversation: 'A tree... did the robots give you life?
+
+      Are you here
+      to destroy us all?
+
+      Or are you...?'
+    index: 0
+    option1:
+      option: Yes!
+      nextText: 2
+      IsTheEnd: 1
+      containsMision: 0
+    option2:
+      option: No, I am calm
+      nextText: 1
+      IsTheEnd: 0
+      containsMision: 0
+  - StartConversation: 'Well, I have skins of many animals
+
+      if you''re interested,
+      because I see that you''re not wearing
+
+      clothes...'
+    index: 1
+    option1:
+      option: I like to be free
+      nextText: 0
+      IsTheEnd: 1
+      containsMision: 0
+    option2:
+      option: Do you kill animals?
+      nextText: 2
+      IsTheEnd: 0
+      containsMision: 0
+  - StartConversation: 'I hunt every now and then, one of these days you could join
+      me
+
+      if you are not busy...'
+    index: 2
+    option1:
+      option: Sorry, I'm not like that.
+      nextText: 0
+      IsTheEnd: 1
+      containsMision: 0
+    option2:
+      option: Nah, I kill robots.
+      nextText: 0
+      IsTheEnd: 1
+      containsMision: 0
+  StringAnimatorPlay: ExitStore
+  transformCamera: {fileID: 0}
+  missions: {fileID: 0}

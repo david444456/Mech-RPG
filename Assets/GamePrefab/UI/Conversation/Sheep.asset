@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ce71d3c8c05e1894ebb368a8c5b75e2c, type: 3}
+  m_Name: Sheep
+  m_EditorClassIdentifier: 
+  structConversations:
+  - StartConversation: 'I used to sell a lot of plants...
+
+      Plants like you.'
+    index: 0
+    option1:
+      option: OK?
+      nextText: 0
+      IsTheEnd: 1
+      containsMision: 0
+    option2:
+      option: Unlucky.
+      nextText: 0
+      IsTheEnd: 1
+      containsMision: 0
+  StringAnimatorPlay: ExitStore
+  transformCamera: {fileID: 0}
+  missions: {fileID: 11400000, guid: f3fb552c57bb8e547bcb96ece5765c78, type: 2}

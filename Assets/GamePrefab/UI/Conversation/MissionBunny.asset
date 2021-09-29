@@ -1,0 +1,106 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ce71d3c8c05e1894ebb368a8c5b75e2c, type: 3}
+  m_Name: MissionBunny
+  m_EditorClassIdentifier: 
+  structConversations:
+  - StartConversation: "Tengo depresi\xF3n..."
+    index: 0
+    option1:
+      option: Mira vos...
+      nextText: 0
+      IsTheEnd: 1
+      containsMision: 0
+    option2:
+      option: "\xBFPor qu\xE9?"
+      nextText: 1
+      IsTheEnd: 0
+      containsMision: 0
+  - StartConversation: Los robots queman todos los bosques...
+    index: 1
+    option1:
+      option: "\xBFPor qu\xE9?"
+      nextText: 3
+      IsTheEnd: 0
+      containsMision: 0
+    option2:
+      option: Y tu no haces nada?
+      nextText: 2
+      IsTheEnd: 0
+      containsMision: 0
+  - StartConversation: "\xBFQu\xE9 podr\xEDa hacer un tonto conejo homosexual?"
+    index: 2
+    option1:
+      option: Ni idea...
+      nextText: 0
+      IsTheEnd: 1
+      containsMision: 0
+    option2:
+      option: Puedo ayudarte
+      nextText: 4
+      IsTheEnd: 0
+      containsMision: 0
+  - StartConversation: "Necesito la ayuda de un fuerte especimen \ncon un cuerpo muy
+      rigido..."
+    index: 3
+    option1:
+      option: Ayuda vos hdp!!
+      nextText: 2
+      IsTheEnd: 1
+      containsMision: 0
+    option2:
+      option: Puedo ayudarte
+      nextText: 4
+      IsTheEnd: 0
+      containsMision: 0
+  - StartConversation: "Mira que son medio fuertes los locos, \nte recomiendo primero
+      terminar la \nsesi\xF3n de entrenamiento..."
+    index: 4
+    option1:
+      option: Dale gracias
+      nextText: 2
+      IsTheEnd: 1
+      containsMision: 0
+    option2:
+      option: Yo me la banco
+      nextText: 5
+      IsTheEnd: 0
+      containsMision: 0
+  - StartConversation: 'En serio hay algunos enemigos que
+
+      estan pensados hacerlo con el salto...'
+    index: 5
+    option1:
+      option: Entiendo, nv
+      nextText: 2
+      IsTheEnd: 1
+      containsMision: 0
+    option2:
+      option: Si si mandale mecha
+      nextText: 6
+      IsTheEnd: 0
+      containsMision: 0
+  - StartConversation: Mira que no vas a poder volver
+    index: 6
+    option1:
+      option: Anda a cagar pelotudo
+      nextText: 2
+      IsTheEnd: 1
+      containsMision: 0
+    option2:
+      option: SOY RE PIJUDO
+      nextText: 0
+      IsTheEnd: 1
+      containsMision: 1
+  StringAnimatorPlay: ExitStore
+  transformCamera: {fileID: 0}
+  missions: {fileID: 11400000, guid: 42f832d19e2bcae498427e061d2f9d5e, type: 2}

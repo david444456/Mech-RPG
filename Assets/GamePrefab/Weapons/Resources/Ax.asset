@@ -1,0 +1,46 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ba3c45a0949c8e44af9ab41baabc200, type: 3}
+  m_Name: Ax
+  m_EditorClassIdentifier: 
+  instigatorCharacterWeapon: {fileID: 0}
+  UniqueIdentifier: 6
+  AttackArea: 1
+  AttackWithCombo: 1
+  damageArea: 30
+  weaponDamage: 30
+  spriteWeapon: {fileID: 21300000, guid: 8eff164f55ad5734cababa145eadf223, type: 3}
+  CooldownAbilities:
+  - 0
+  - 0
+  - 0
+  - 0
+  spawnWeaponPickup: {fileID: 6151547836202775968, guid: 90a88d4636099184dbf896e430b4b9e3,
+    type: 3}
+  attackAnimationWeapon: attack
+  typeWeapon: 5
+  damageForTypeWeapon: 6
+  priceWeaponStore: 95
+  resourcesCostsInStore: 0a0000000a000000
+  descriptionWeapon: "Nothing more powerful than an axe\r\ncovered in blood...\nThis
+    weapon is a normal weapon, with \r\ncombos on R, E and W.\r"
+  positionStore: {x: 0, y: 0.3, z: 0}
+  rotationStore: {x: 108, y: 24, z: 0}
+  spawnSimpleWeapon: {fileID: 3661625261055877660, guid: e0dc4d34681a8974ca4891f96b97fc85,
+    type: 3}
+  animatorOverride: {fileID: 22100000, guid: e3c5ddfe2c166534aafb60b449c79ee2, type: 2}
+  weaponObject: {fileID: 6375547006590581425, guid: e0dc4d34681a8974ca4891f96b97fc85,
+    type: 3}
+  weaponRange: 1.6
+  percentageBonus: 0
+  isRightHanded: 1
+  projectile: {fileID: 0}

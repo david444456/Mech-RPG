@@ -1,0 +1,38 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ba3c45a0949c8e44af9ab41baabc200, type: 3}
+  m_Name: SwordEnemy
+  m_EditorClassIdentifier: 
+  UniqueIdentifier: -1
+  AttackArea: 0
+  AttackWithCombo: 0
+  damageArea: 8
+  weaponDamage: 35
+  spriteWeapon: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
+  CooldownAbilities:
+  - 0
+  spawnWeaponPickup: {fileID: 6633864155807009822, guid: 9299caa1de06f75439ae241a2957ce20,
+    type: 3}
+  typeWeapon: 3
+  damageForTypeWeapon: 15
+  priceWeaponStore: 55
+  descriptionWeapon: "This weapon is a normal weapon, \ncon combos in Q, E and R.\n"
+  rotationStore: {x: 0, y: 0, z: 0}
+  spawnSimpleWeapon: {fileID: 7330811924710843039, guid: 2525724a0d0c38c4895685492d67e41d,
+    type: 3}
+  animatorOverride: {fileID: 22100000, guid: 8eae3248921b2bd4894a0b2af1655d1e, type: 2}
+  weaponObject: {fileID: 2189008916733135437, guid: 713b5b30c4a899645a4bd531f3143285,
+    type: 3}
+  weaponRange: 1.38
+  percentageBonus: 0.1
+  isRightHanded: 1
+  projectile: {fileID: 0}

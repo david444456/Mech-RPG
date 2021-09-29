@@ -1,0 +1,170 @@
+fileFormatVersion: 2
+guid: 4f333842777cbe042b1dd22e6a7db083
+ModelImporter:
+  serializedVersion: 20200
+  internalIDToNameTable:
+  - first:
+      74: 1301899823027557184
+    second: PlayerCharacterRIG.001|Enemy2IAttack
+  - first:
+      74: 4039588726467000868
+    second: PlayerCharacterRIG.001|Enemy2Idle
+  - first:
+      74: 5212195632932109690
+    second: PlayerCharacterRIG.001|Enemy2Run
+  - first:
+      74: -4103093738840821613
+    second: PlayerCharacterRIG.001|Enemy2Walk
+  externalObjects: {}
+  materials:
+    materialImportMode: 2
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: "Invalid Avatar Rig Configuration. Missing or invalid transform:\n\tRequired
+      human bone 'Spine' not found\n"
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 3
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    fileIdsGeneration: 2
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    bakeAxisConversion: 0
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 1
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human: []
+    skeleton:
+    - name: Enemy2AnimationsIdle_Walk_Run_Hit(Clone)
+      parentName: 
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Cube.022
+      parentName: Enemy2AnimationsIdle_Walk_Run_Hit(Clone)
+      position: {x: 0.09018123, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 0.20881069, y: 0.20881069, z: 0.20881069}
+    - name: PlayerCharacterRIG.001
+      parentName: Enemy2AnimationsIdle_Walk_Run_Hit(Clone)
+      position: {x: 0.09018123, y: 0, z: 0}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 100, y: 100, z: 100}
+    - name: Root
+      parentName: PlayerCharacterRIG.001
+      position: {x: -0.0009018124, y: -0.000103142556, z: -0.0034855981}
+      rotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071067}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Head
+      parentName: Root
+      position: {x: -0, y: 0.006755546, z: 0}
+      rotation: {x: -0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: UpperArm.l
+      parentName: Head
+      position: {x: -0.001679707, y: 0.0018004363, z: -0.00030138603}
+      rotation: {x: 0.92505366, y: -0.11964724, z: -0.35901895, w: 0.032644097}
+      scale: {x: 1, y: 0.99999976, z: 1}
+    - name: LowerArm.l
+      parentName: UpperArm.l
+      position: {x: 6.3329936e-10, y: 0.0020912788, z: 3.352761e-10}
+      rotation: {x: -0.090293966, y: -0.026347686, z: -0.16202983, w: 0.98229283}
+      scale: {x: 0.9999999, y: 1.0000006, z: 0.9999999}
+    - name: LowerArm.l_end
+      parentName: LowerArm.l
+      position: {x: -0, y: 0.0024952022, z: 0}
+      rotation: {x: -0.39325544, y: -0.23743965, z: 0.31701785, w: 0.8297424}
+      scale: {x: 1, y: 1, z: 1}
+    - name: UpperArm.r.001
+      parentName: Head
+      position: {x: 0.001679707, y: 0.0018004363, z: -0.00030138603}
+      rotation: {x: 0.7437327, y: 0.025946885, z: -0.6568718, w: 0.12127608}
+      scale: {x: 0.9999997, y: 0.99999994, z: 0.9999996}
+    - name: LowerArm.r.001
+      parentName: UpperArm.r.001
+      position: {x: 1.4901161e-10, y: 0.0020912774, z: 6.1467287e-10}
+      rotation: {x: 0.18541138, y: 0.10369441, z: -0.005422019, w: 0.9771595}
+      scale: {x: 1.0000004, y: 1.0000002, z: 1.0000002}
+    - name: LowerArm.r.001_end
+      parentName: LowerArm.r.001
+      position: {x: -0, y: 0.0024952022, z: 0}
+      rotation: {x: -0.11010333, y: 0.23743974, z: 0.49297804, w: 0.8297423}
+      scale: {x: 1, y: 1, z: 1}
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 1
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 2
+  humanoidOversampling: 1
+  avatarSetup: 1
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,57 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ce71d3c8c05e1894ebb368a8c5b75e2c, type: 3}
+  m_Name: StoreTree
+  m_EditorClassIdentifier: 
+  structConversations:
+  - StartConversation: Hola loquita
+    index: 0
+    option1:
+      option: Tu vieja
+      nextText: 1
+      IsTheEnd: 0
+      containsMision: 0
+    option2:
+      option: "\xBFQu\xE9 onda wuachin?"
+      nextText: 2
+      IsTheEnd: 0
+      containsMision: 0
+  - StartConversation: 'Eh eh solo soy un vendedor. Mira mis
+
+      cosas seguro que algo te sirve'
+    index: 1
+    option1:
+      option: OK.
+      nextText: 0
+      IsTheEnd: 1
+      containsMision: 0
+    option2:
+      option: Voy a ver tu basura.
+      nextText: 0
+      IsTheEnd: 1
+      containsMision: 0
+  - StartConversation: "Nada estoy teniendo problemas para \nconseguir metales, si
+      consigues unos\ncuantos por ah\xED estare encantado en \ncomprarte"
+    index: 2
+    option1:
+      option: Ni en pedo.
+      nextText: 0
+      IsTheEnd: 1
+      containsMision: 0
+    option2:
+      option: "Bueno podr\xEDa ser..."
+      nextText: 0
+      IsTheEnd: 1
+      containsMision: 0
+  StringAnimatorPlay: ExitStore
+  transformCamera: {fileID: 0}
+  missions: {fileID: 11400000, guid: 42f832d19e2bcae498427e061d2f9d5e, type: 2}

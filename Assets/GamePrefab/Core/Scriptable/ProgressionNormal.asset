@@ -1,0 +1,307 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2ac782c3ffd8cc84a9b47802a5b20ca2, type: 3}
+  m_Name: ProgressionNormal
+  m_EditorClassIdentifier: 
+  characterClasses:
+  - character: 0
+    stats:
+    - stat: 0
+      levels:
+      - 210
+      - 300
+      - 460
+      - 640
+      - 820
+    - stat: 2
+      levels:
+      - 450
+      - 900
+      - 1800
+      - 2500
+    - stat: 3
+      levels:
+      - 20
+      - 35
+      - 50
+      - 60
+    textKilledYou: YOU KILLED YOURSELF JAJAJAJAJAJAJAJAJAJAJAJAJAJAJAJAJAJAJAJAJAJAJAJAJAJAJAJAJAJAJAJAJAJAJAJAJ
+      seriously, how did you do it?
+  - character: 1
+    stats:
+    - stat: 0
+      levels:
+      - 200
+      - 250
+      - 320
+      - 520
+      - 900
+      - 1300
+      - 1500
+      - 2000
+      - 2300
+      - 2800
+    - stat: 1
+      levels:
+      - 3
+      - 15
+      - 22
+      - 35
+      - 70
+      - 120
+      - 134
+      - 175
+      - 225
+      - 280
+    - stat: 3
+      levels:
+      - 7
+      - 12
+      - 20
+      - 25
+      - 35
+      - 42
+      - 55
+      - 67
+      - 87
+      - 100
+    textKilledYou: The right man in the wrong place can change the course of the
+      world, that's why you're dead right.
+  - character: 5
+    stats:
+    - stat: 0
+      levels:
+      - 900
+      - 1200
+      - 1500
+      - 1800
+      - 2100
+      - 2300
+      - 2500
+      - 3000
+      - 3300
+      - 3800
+    - stat: 1
+      levels:
+      - 3
+      - 5
+      - 6
+      - 10
+      - 15
+      - 120
+      - 134
+      - 175
+      - 225
+      - 280
+    - stat: 3
+      levels:
+      - 5
+      - 10
+      - 15
+      - 20
+      - 25
+      - 30
+      - 35
+      - 37
+      - 40
+      - 42
+    textKilledYou: The right man in the wrong place can change the course of the
+      world, that's why you're dead right.
+  - character: 7
+    stats:
+    - stat: 0
+      levels:
+      - 120
+      - 200
+      - 300
+      - 500
+      - 820
+      - 1000
+      - 1300
+      - 1900
+      - 2300
+      - 2800
+    - stat: 1
+      levels:
+      - 3
+      - 15
+      - 22
+      - 35
+      - 70
+      - 120
+      - 134
+      - 175
+      - 225
+      - 280
+    - stat: 3
+      levels:
+      - 5
+      - 10
+      - 15
+      - 20
+      - 25
+      - 30
+      - 35
+      - 37
+      - 40
+      - 42
+    textKilledYou: "You realise you're bad when you're \r\nkilled by a 50cm robot,
+      weighing 3kg... \r\nweight...\r\nNah lie I'm 53cm"
+  - character: 4
+    stats:
+    - stat: 0
+      levels:
+      - 75
+      - 150
+      - 280
+      - 480
+      - 750
+      - 900
+      - 1500
+      - 2000
+      - 2300
+      - 2800
+    - stat: 1
+      levels:
+      - 3
+      - 15
+      - 22
+      - 35
+      - 70
+      - 120
+      - 134
+      - 175
+      - 225
+      - 280
+    - stat: 3
+      levels:
+      - 5
+      - 10
+      - 15
+      - 20
+      - 25
+      - 30
+      - 35
+      - 37
+      - 40
+      - 42
+    textKilledYou: 'I''m a robot with magical powers, what science does...
+
+      science...'
+  - character: 6
+    stats:
+    - stat: 0
+      levels:
+      - 120
+      - 150
+      - 200
+      - 300
+      - 100
+    - stat: 1
+      levels:
+      - 20
+      - 20
+      - 20
+      - 20
+      - 20
+    - stat: 3
+      levels:
+      - 25
+      - 30
+      - 35
+      - 45
+      - 55
+    textKilledYou: 'Can''t you stand a little bit of fire?
+
+      You''re worse than
+      those trees I burned, with a little bit of fire they would start to fall down.'
+  - character: 2
+    stats:
+    - stat: 0
+      levels:
+      - 350
+      - 520
+      - 650
+      - 780
+      - 890
+      - 1100
+      - 1250
+      - 1400
+      - 1600
+      - 1800
+    - stat: 1
+      levels:
+      - 3
+      - 15
+      - 22
+      - 33
+      - 45
+      - 53
+      - 82
+      - 100
+      - 170
+      - 230
+    - stat: 3
+      levels:
+      - 6
+      - 13
+      - 19
+      - 25
+      - 32
+      - 40
+      - 48
+      - 70
+      - 88
+      - 100
+    textKilledYou: "Bi biiiip BEEEEEEEEEEEEEEEEP, I'm lying I can \r\ntalk, I wanted
+      to tell you that I like \r\ncutting down trees.\r\nEspecially the violent ones
+      \r\nlike you :*"
+  - character: 3
+    stats:
+    - stat: 0
+      levels:
+      - 1250
+      - 1650
+      - 2000
+      - 2500
+      - 2800
+      - 3400
+      - 4100
+      - 5300
+      - 6500
+      - 7400
+    - stat: 1
+      levels:
+      - 25
+      - 46
+      - 70
+      - 110
+      - 175
+      - 210
+      - 220
+      - 240
+      - 280
+      - 310
+    - stat: 3
+      levels:
+      - 25
+      - 34
+      - 55
+      - 67
+      - 86
+      - 100
+      - 110
+      - 130
+      - 155
+      - 175
+    textKilledYou: "Why do I have magical powers? \r\nI am a protective robot...
+      designed to \r\nprotect?"

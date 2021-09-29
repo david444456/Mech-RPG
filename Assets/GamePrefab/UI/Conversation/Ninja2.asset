@@ -1,0 +1,85 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ce71d3c8c05e1894ebb368a8c5b75e2c, type: 3}
+  m_Name: Ninja2
+  m_EditorClassIdentifier: 
+  structConversations:
+  - StartConversation: 'Buenas!! hoy toca entrenamiento de
+
+      disparo...'
+    index: 0
+    option1:
+      option: "\xBFPor qu\xE9 me ayudas?"
+      nextText: 1
+      IsTheEnd: 0
+      containsMision: 0
+    option2:
+      option: Buenardo!
+      nextText: 2
+      IsTheEnd: 0
+      containsMision: 0
+  - StartConversation: "Esta gente a sufrido mucho... y yo ya\nestoy muy viejo y gordo
+      para ayudarlos. \nConfio en ti para lograr la tarea de protegerlos"
+    index: 1
+    option1:
+      option: Que feo
+      nextText: 3
+      IsTheEnd: 0
+      containsMision: 0
+    option2:
+      option: Bueno vamos!
+      nextText: 2
+      IsTheEnd: 0
+      containsMision: 0
+  - StartConversation: "Bueno, para este entrenamiento vas a usar\nun arma especial
+      que te voy a dar, as\xED que\nte voy a quitar las tuyas y te doy esta. \nPor
+      eso te recomiendo que vayas a guardar tus armas"
+    index: 2
+    option1:
+      option: Gracias por el dato!
+      nextText: 0
+      IsTheEnd: 1
+      containsMision: 0
+    option2:
+      option: Ya las guarde
+      nextText: 4
+      IsTheEnd: 0
+      containsMision: 0
+  - StartConversation: "Y si bueno as\xED esta la cosa, te interesa?"
+    index: 3
+    option1:
+      option: Na, en un rato
+      nextText: 0
+      IsTheEnd: 1
+      containsMision: 0
+    option2:
+      option: Dale wuachin
+      nextText: 2
+      IsTheEnd: 0
+      containsMision: 0
+  - StartConversation: 'Mira que no te las voy a devolver, dale guardalas
+
+      y de paso ves como funciona eso...'
+    index: 3
+    option1:
+      option: Dale entiendo.
+      nextText: 0
+      IsTheEnd: 1
+      containsMision: 0
+    option2:
+      option: Que si ya las guarde!
+      nextText: 0
+      IsTheEnd: 1
+      containsMision: 1
+  StringAnimatorPlay: ExitStore
+  transformCamera: {fileID: 0}
+  missions: {fileID: 11400000, guid: c2cb55c854fd49143ad45b2ed4cc3768, type: 2}

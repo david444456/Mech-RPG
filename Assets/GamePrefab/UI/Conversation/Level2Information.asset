@@ -1,0 +1,56 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ce71d3c8c05e1894ebb368a8c5b75e2c, type: 3}
+  m_Name: Level2Information
+  m_EditorClassIdentifier: 
+  structConversations:
+  - StartConversation: "Gracias! lo has conseguido! \nLastimosamente eso que acabas
+      de ver\npasa en muchos otros lados de la \nArgentina..."
+    index: 0
+    option1:
+      option: Tampoco vivo para esto
+      nextText: 1
+      IsTheEnd: 1
+      containsMision: 0
+    option2:
+      option: "\xBFOtro lados?"
+      nextText: 1
+      IsTheEnd: 0
+      containsMision: 0
+  - StartConversation: "SI! es horrible, puede ir a esos lugares\ninteractuando con
+      el mapa, y ah\xED decides \na donde ir"
+    index: 1
+    option1:
+      option: Esta en mantenimiento...
+      nextText: 2
+      IsTheEnd: 0
+      containsMision: 0
+    option2:
+      option: Gracias! nv
+      nextText: 0
+      IsTheEnd: 1
+      containsMision: 0
+  - StartConversation: 'Si pero no por mucho? '
+    index: 2
+    option1:
+      option: OK.
+      nextText: 0
+      IsTheEnd: 1
+      containsMision: 0
+    option2:
+      option: Sos un sorete
+      nextText: 0
+      IsTheEnd: 1
+      containsMision: 0
+  StringAnimatorPlay: ExitStore
+  transformCamera: {fileID: 0}
+  missions: {fileID: 0}
