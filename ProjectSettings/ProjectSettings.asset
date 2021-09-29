@@ -14,7 +14,7 @@ PlayerSettings:
   accelerometerFrequency: 60
   companyName: DefaultCompany
   productName: Mech RPG
-  defaultCursor: {fileID: 2800000, guid: 54f19281d4ab650459f3c61ed17c11f3, type: 3}
+  defaultCursor: {fileID: 2800000, guid: bf7b1de640b28f0489816c3161a014e9, type: 3}
   cursorHotspot: {x: 0, y: 0}
   m_SplashScreenBackgroundColor: {r: 0.13725491, g: 0.12156863, b: 0.1254902, a: 1}
   m_ShowUnitySplashScreen: 1

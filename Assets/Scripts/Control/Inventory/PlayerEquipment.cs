@@ -48,10 +48,10 @@ namespace RPG.Inventory
 
         private void FindItemAndChangeArmor(ItemInventory itemInventory, bool value) {
             switch (itemInventory.GetTypeItemArmor()) {
-                case TypeArmor.Hat:
+                case TypeArmor.Gloves:
                     ChangeNewArmor(ref itemHat, itemInventory, value);
                     break;
-                case TypeArmor.Front:
+                case TypeArmor.Chest:
                     ChangeNewArmor(ref itemFront, itemInventory, value);
                     break;
                 case TypeArmor.Pants:

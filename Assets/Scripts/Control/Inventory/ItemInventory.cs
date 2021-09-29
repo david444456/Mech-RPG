@@ -19,7 +19,7 @@ namespace RPG.Inventory
 
         public virtual string GetInfoItemString() => "";
 
-        public virtual TypeArmor GetTypeItemArmor() => TypeArmor.Hat;
+        public virtual TypeArmor GetTypeItemArmor() => TypeArmor.Chest;
 
         public virtual int GetActualArmorItem() => 0;
 

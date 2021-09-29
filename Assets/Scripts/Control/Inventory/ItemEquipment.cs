@@ -26,8 +26,8 @@ namespace RPG.Inventory
     }
     public enum TypeArmor
     {
-        Hat,
-        Front,
+        Gloves,
+        Chest,
         Pants,
         Boots
     }
