@@ -1,5 +1,6 @@
 ﻿using RPG.Combat;
 using RPG.Core;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -9,7 +10,7 @@ public class PlayerUI : MonoBehaviour
 {
     [Header("General")]
     [SerializeField] Image imageDeadButton;
-
+    [SerializeField] GameObject MenuObject;
     [SerializeField] Text descriptionInventory;
 
     [Header("Weapon ")]
@@ -102,5 +103,8 @@ public class PlayerUI : MonoBehaviour
         textDead.text = instigatorString + ": \n" + stringDead;
     }
 
-
+    public void ChangeStateMenu()
+    {
+        MenuObject.SetActive(!MenuObject.activeSelf);
+    }
 }

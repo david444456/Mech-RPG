@@ -34,7 +34,7 @@ MonoBehaviour:
     W.\r"
   positionStore: {x: 0, y: 0.5, z: 0}
   rotationStore: {x: 0, y: 0, z: -90}
-  spawnSimpleWeapon: {fileID: 7330811924710843039, guid: 2525724a0d0c38c4895685492d67e41d, type: 3}
+  spawnSimpleWeapon: {fileID: 8415581719171519200, guid: 713b5b30c4a899645a4bd531f3143285, type: 3}
   animatorOverride: {fileID: 22100000, guid: 37abd5a841b760b40805fbe9c2e00910, type: 2}
   weaponObject: {fileID: 2189008916733135437, guid: 713b5b30c4a899645a4bd531f3143285, type: 3}
   weaponRange: 1

@@ -73,6 +73,9 @@ namespace RPG.Inventory
             return interact;
         }
 
+
+        public bool IsTheInventoryActive() => GOInventory.activeSelf;
+
         private void SaveNewItemInventory(ItemInventory _itemInventory) {
             int indexEmpty = inventory.GetEmptySlotIndex();
             if (indexEmpty < 0) return;

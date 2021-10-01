@@ -12,11 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba9a55d15958af74f8d887a973bd034f, type: 3}
   m_Name: Chest 0
   m_EditorClassIdentifier: 
-  _index: 0
+  _index: 2
   _typeItemInventory: 1
-  _gameObjectToSpawn: {fileID: 5280461700867230179, guid: f2a90b292e7b09640b3632f068e8ee14, type: 3}
-  _nameItem: Boots
-  description: This is a amazing waist
-  _spriteImageInInventory: {fileID: 21300000, guid: a0d48263d91295547a5859ead7a600a4, type: 3}
-  _typeArmor: 2
+  _gameObjectToSpawn: {fileID: 5280461700867230179, guid: 525d5fce30b3a254f8d67717b88e3f31, type: 3}
+  _nameItem: Chest
+  description: This is a amazing chest
+  _spriteImageInInventory: {fileID: 7237501223668211569, guid: d0499d22d89ef0a48a8576c94d377a73, type: 3}
+  _typeArmor: 1
   _valueArmor: 20
+  _gameObjectsArmor:
+  - {fileID: 6784230779131499838, guid: 4e2e8c26824afc3458ae44d06d5f367f, type: 3}

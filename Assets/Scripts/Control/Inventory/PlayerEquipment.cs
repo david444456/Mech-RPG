@@ -8,6 +8,26 @@ namespace RPG.Inventory
 {
     public class PlayerEquipment : MonoBehaviour
     {
+        [Header("Chest")]
+        [SerializeField] Transform[] _chestPosition;
+
+        [Header("Gloves")]
+        [SerializeField] Transform[] _GlovesPosition;
+
+        [Header("Pants")]
+        [SerializeField] Transform[] _PantsPosition;
+
+        [Header("Boots")]
+        [SerializeField] Transform[] _BootsPosition;
+
+        GameObject[] _chestGO;
+
+        GameObject[] _GlovesGO;
+
+        GameObject[] _PantsGORight;
+
+        GameObject[] _BootsGORight;
+
         ItemInventory itemHat;
         ItemInventory itemFront;
         ItemInventory itemPants;
@@ -26,6 +46,11 @@ namespace RPG.Inventory
             playerUI = GetComponent<PlayerUI>();
 
             UpdateTextStatsInventory();
+
+            _chestGO = new GameObject[_chestPosition.Length];
+            _GlovesGO = new GameObject[_GlovesPosition.Length];
+            _PantsGORight = new GameObject[_PantsPosition.Length];
+            _BootsGORight = new GameObject[_BootsPosition.Length];
         }
 
         public void AddNewEquipmentToPlayer(ItemInventory itemInventory) {
@@ -50,9 +75,11 @@ namespace RPG.Inventory
             switch (itemInventory.GetTypeItemArmor()) {
                 case TypeArmor.Gloves:
                     ChangeNewArmor(ref itemHat, itemInventory, value);
+                    ChangeArmorGameObject(itemInventory, _GlovesPosition, _GlovesGO, value);
                     break;
                 case TypeArmor.Chest:
                     ChangeNewArmor(ref itemFront, itemInventory, value);
+                    ChangeArmorGameObject(itemInventory, _chestPosition, _chestGO, value);
                     break;
                 case TypeArmor.Pants:
                     ChangeNewArmor(ref itemPants, itemInventory, value);
@@ -63,11 +90,23 @@ namespace RPG.Inventory
             }
         }
 
+        private void ChangeArmorGameObject(ItemInventory itemInventory, Transform[] GOposition, GameObject[] GOSaveArmor, bool value)
+        {
+            for (int i = 0; i < GOposition.Length; i++)
+            {
+                if (!value)
+                    GOSaveArmor[0] = Instantiate(itemInventory.GetGameObjectsArmor()[i], GOposition[i].transform);
+                else
+                    Destroy(GOSaveArmor[0]);
+            }
+        }
+
         private void ChangeNewArmor(ref ItemInventory item, ItemInventory itemInventory, bool OnlyForNotDrop)
         {
             if (item != null) {
-                if(!OnlyForNotDrop) print("Spawn new armor in the zone, or add to the inventory " + OnlyForNotDrop);
-                RemoveArmorFromPlayer(item);
+
+                if(!OnlyForNotDrop) SpawnLastItem(item);
+                RemoveArmorFromPlayer(ref item);
             }
             if (OnlyForNotDrop) return; //only remove if item it is wear
 
@@ -75,19 +114,19 @@ namespace RPG.Inventory
             EquipNewArmorToPlayer(item);
         }
 
-        private void EquipNewArmorToPlayer(ItemInventory itemInventory)
+        private void EquipNewArmorToPlayer(ItemInventory item)
         {
             //add stats from the player
-            print("Add armor " + itemInventory.GetActualArmorItem());
-            healthPlayer.ReceivedNewArmor(itemInventory.GetActualArmorItem());
-
+            print("Add armor " + item.GetActualArmorItem());
+            healthPlayer.ReceivedNewArmor(item.GetActualArmorItem());
         }
 
-        private void RemoveArmorFromPlayer(ItemInventory itemInventory) {
+        private void RemoveArmorFromPlayer(ref ItemInventory itemInventory) {
             //remove stats from the player
             print("Remove armor " + itemInventory.GetActualArmorItem());
-            SpawnLastItem(itemInventory);
+
             healthPlayer.EliminatedArmor(itemInventory.GetActualArmorItem());
+            itemInventory = null;
         }
 
         #endregion

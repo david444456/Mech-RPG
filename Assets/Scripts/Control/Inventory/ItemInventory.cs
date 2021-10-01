@@ -25,6 +25,8 @@ namespace RPG.Inventory
 
         public virtual GameObject GetGameObjectToSpawn() => _gameObjectToSpawn;
 
+        public virtual GameObject[] GetGameObjectsArmor() => null;
+
         public TypeItemInventory GetTypeItemInventory() => _typeItemInventory;
 
         public Sprite GetSpriteInventory() => _spriteImageInInventory;

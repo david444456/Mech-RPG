@@ -4699,7 +4699,7 @@ ParticleSystemRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 18ffbbee67063c74f96186560afd2378, type: 2}
+  - {fileID: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -5034,13 +5034,25 @@ PrefabInstance:
       propertyPath: m_Materials.Array.size
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 6420780141756735151, guid: 02a12ca670002aa4c921676c4890937b, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 6420863290668840245, guid: 02a12ca670002aa4c921676c4890937b, type: 3}
       propertyPath: m_Materials.Array.size
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 6420863290668840245, guid: 02a12ca670002aa4c921676c4890937b, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 6420913912141264171, guid: 02a12ca670002aa4c921676c4890937b, type: 3}
       propertyPath: m_Materials.Array.size
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6420913912141264171, guid: 02a12ca670002aa4c921676c4890937b, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 6421108614716881505, guid: 02a12ca670002aa4c921676c4890937b, type: 3}
       propertyPath: m_Materials.Array.size
@@ -5993,7 +6005,7 @@ PrefabInstance:
     - target: {fileID: 5394967240942155867, guid: 8a051a2f8c6422748a97d92dc3909fc3, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 00ab4d63a3dd8b14697b31d9df662f87, type: 2}
+      objectReference: {fileID: 0}
     - target: {fileID: 5796469022238222643, guid: 8a051a2f8c6422748a97d92dc3909fc3, type: 3}
       propertyPath: lengthInSec
       value: 0.16
@@ -6085,6 +6097,14 @@ PrefabInstance:
     - target: {fileID: 636999573070767406, guid: f1d19dc6e947952488c3e088714f8ba3, type: 3}
       propertyPath: m_ReferenceResolution.y
       value: 1080
+      objectReference: {fileID: 0}
+    - target: {fileID: 884349969944612690, guid: f1d19dc6e947952488c3e088714f8ba3, type: 3}
+      propertyPath: Loop
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 884349969944612690, guid: f1d19dc6e947952488c3e088714f8ba3, type: 3}
+      propertyPath: m_Volume
+      value: 0.03
       objectReference: {fileID: 0}
     - target: {fileID: 933844505850366684, guid: f1d19dc6e947952488c3e088714f8ba3, type: 3}
       propertyPath: m_Pivot.y

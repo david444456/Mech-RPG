@@ -4,12 +4,15 @@ using UnityEngine;
 using UnityEngine.UI;
 using RPG.Core;
 using RPG.Stats;
+using UnityEngine.Events;
 
 namespace RPG.SceneManagement {
     public class MenuControlCanvas : MonoBehaviour
     {
         [SerializeField] Portal portal;
         [SerializeField] ConfigurationGame configurationGame;
+        [SerializeField] float timeToStartGame = 40;
+        [SerializeField] UnityEvent startNewGame = new UnityEvent();
 
         [Header("Progression")]
         [SerializeField] Progression progressionEasy;
@@ -19,13 +22,23 @@ namespace RPG.SceneManagement {
         public void StartNewGame()
         {
             PlayerInformationBetweenScenes.gameManager.UpdateInformationStartNewGame(progressionMedium);
-            ControlChangeScenes.Instance.StartNewGame();
-            portal.StartTransition();
+            startNewGame.Invoke();
+            StartCoroutine(StartGameByTime(timeToStartGame));
         }
 
         public void LoadScene() {
             PlayerInformationBetweenScenes.gameManager.progressionPrincipal = PlayerInformationBetweenScenes.gameManager.configuration.configurationGame.progressionActual;
             ControlChangeScenes.Instance.restartScene();
+        }
+
+        public void QuitGame() {
+            Application.Quit();
+        }
+
+        IEnumerator StartGameByTime(float time) {
+            yield return new WaitForSeconds(time);
+            ControlChangeScenes.Instance.StartNewGame();
+            portal.StartTransition();
         }
     }
 }

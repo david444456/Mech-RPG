@@ -2,7 +2,8 @@
     public enum CursorType
     {
         None,
-        Movement,
+        Click,
+        Normal,
         Combat,
         UI,
         Pickup,

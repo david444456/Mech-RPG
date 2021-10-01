@@ -10,6 +10,7 @@ namespace RPG.Inventory
         [Header("Equipment")]
         [SerializeField] TypeArmor _typeArmor;
         [SerializeField] int _valueArmor = 0;
+        [SerializeField] GameObject[] _gameObjectsArmor;
 
         public override string GetInfoItemString()
         {
@@ -22,6 +23,8 @@ namespace RPG.Inventory
         public override TypeArmor GetTypeItemArmor() => _typeArmor;
 
         public override int GetActualArmorItem() => _valueArmor;
+
+        public override GameObject[] GetGameObjectsArmor() => _gameObjectsArmor;
 
     }
     public enum TypeArmor

@@ -61,7 +61,6 @@ namespace RPG.Inventory
         public void OnPointerEnter(PointerEventData eventData)
         {
             EventPointerEnterThisCard.Invoke();
-            Debug.Log("Mouse is over GameObject.");
         }
 
         public void OnPointerExit(PointerEventData eventData)

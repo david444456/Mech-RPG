@@ -13,7 +13,7 @@ PlayerSettings:
   useOnDemandResources: 0
   accelerometerFrequency: 60
   companyName: DefaultCompany
-  productName: Mech RPG
+  productName: ALIVE
   defaultCursor: {fileID: 2800000, guid: bf7b1de640b28f0489816c3161a014e9, type: 3}
   cursorHotspot: {x: 0, y: 0}
   m_SplashScreenBackgroundColor: {r: 0.13725491, g: 0.12156863, b: 0.1254902, a: 1}
@@ -146,7 +146,7 @@ PlayerSettings:
   androidSupportedAspectRatio: 1
   androidMaxAspectRatio: 2.1
   applicationIdentifier:
-    Standalone: com.DefaultCompany.MechRPG
+    Standalone: com.DefaultCompany.ALIVE
   buildNumber:
     Standalone: 0
     iPhone: 0
@@ -261,7 +261,7 @@ PlayerSettings:
   - m_BuildTarget: 
     m_Icons:
     - serializedVersion: 2
-      m_Icon: {fileID: 2800000, guid: 7b5bfc475ae856b43aa5454c1801a2e8, type: 3}
+      m_Icon: {fileID: 2800000, guid: 7033aa8d03d80254b93280b530d85b8c, type: 3}
       m_Width: 128
       m_Height: 128
       m_Kind: 0

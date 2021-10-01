@@ -482,6 +482,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 521233923cd90df47812a2afe32a23fd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isThePlayer: 1
   leftFoot: 0.05
   rightFoot: 0.626
   clips:

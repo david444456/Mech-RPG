@@ -42,7 +42,6 @@ namespace RPG.Control
         [SerializeField] Portal portal;
         [SerializeField] CinematicsTrigger playableDirector;
         [SerializeField] GameObject cameraMap = null;
-        [SerializeField] GameObject startMenu = null;
         [SerializeField] bool useMap = false;
 
         #endregion
@@ -94,15 +93,12 @@ namespace RPG.Control
             }
         }
 
-        private void FixedUpdate()
-        {
-            
-        }
-
         void Update()
         {
             if (health.IsDead()) return;
 
+            InteractWithMouse();
+            if (InteractWithPauseMenu()) return;
             //if (useMap) if (InteractWithMap()) return;
             //if (InteractWithUI()) return;
 
@@ -174,9 +170,30 @@ namespace RPG.Control
 
         public WeaponConfig GetActualWeaponPlayer() => fighter.weaponsEquip[fighter.indexWeaponActual];
 
+        public void ChangeStateMenuPause() {
+            playerUI.ChangeStateMenu();
+
+            if (isGamePaused) Time.timeScale = 1;
+            else Time.timeScale = 0;
+
+            isGamePaused = !isGamePaused;
+        }
+
         #endregion
 
         #region private function
+
+        bool isGamePaused = false;
+
+        private bool InteractWithPauseMenu() {
+            if (!playerInventory.IsTheInventoryActive() && Input.GetKeyDown(KeyCode.Escape)) {
+                //call
+                ChangeStateMenuPause();
+
+                return true;
+            }
+            return false;
+        }
 
         private bool InteractWithPray()
         {
@@ -184,12 +201,6 @@ namespace RPG.Control
         }
 
         bool InteractWithMap() {
-            //menu
-            if (Input.GetButtonDown("Start"))
-            {
-                startMenu.SetActive(!startMenu.activeInHierarchy);
-            }
-
             /*menu active
             if (startMenu.activeInHierarchy) {
                 if (Input.GetButtonDown("Fire1"))
@@ -209,7 +220,6 @@ namespace RPG.Control
                 return true;
             }*/
 
-
             //map
             if (Input.GetButtonDown("Select"))
             {
@@ -219,6 +229,17 @@ namespace RPG.Control
             }
 
             return false;
+        }
+
+        private void InteractWithMouse()
+        {
+            if (Input.GetMouseButton(0))
+            {
+                SetCursor(CursorType.Click);
+            }
+            else if (Input.GetMouseButtonUp(0)) {
+                SetCursor(CursorType.Normal);
+            }
         }
 
         void MoveCameraAroundThePlayer() {
@@ -269,7 +290,7 @@ namespace RPG.Control
                 {
                     GetComponent<Mover>().StartMoveAction(hit.point, 1f);
                 }
-                SetCursor(CursorType.Movement);
+                SetCursor(CursorType.Normal);
                 return true;
             }
             return false;

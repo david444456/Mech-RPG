@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class ControlChangeScenes : MonoBehaviour
 {
@@ -20,15 +21,39 @@ public class ControlChangeScenes : MonoBehaviour
 
     public void restartScene()
     {
-        //ActiveCanvas();
+        ReturnNormalState();
         savingWrapper.loadRestartScene();
     }
 
     public void StartNewGame()
     {
-        //ActiveCanvas();
+        ReturnNormalState();
         savingWrapper.Delete();
     }
+
+    public void QuitGame()
+    {
+        ReturnNormalState();
+        Application.Quit();
+    }
+
+    public void ReturnToMainMenu() {
+        ReturnNormalState();
+        SceneManager.LoadScene(0);
+    }
+
+    public void SaveNewGame() {
+        savingWrapper.Save();
+        StartCoroutine(ChangeVisibilitySavingUI());
+    }
+
+    IEnumerator ChangeVisibilitySavingUI() {
+        CanvasPersistingGO.SetActive(true);
+        yield return new WaitForSeconds(1.8f);
+        CanvasPersistingGO.SetActive(false);
+    }
+
+    private void ReturnNormalState() => Time.timeScale = 1;
 
     private void ActiveCanvas() => CanvasPersistingGO.SetActive(true);
 }
