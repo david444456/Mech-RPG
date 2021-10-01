@@ -9,6 +9,8 @@ namespace RPG.Core {
     public class LevelManager : MonoBehaviour
     {
 
+
+
         public void RestartScenes() {
             ControlChangeScenes.Instance.restartScene();
             print("restart");
@@ -23,9 +25,14 @@ namespace RPG.Core {
             ControlChangeScenes.Instance.ReturnToMainMenu();
         }
 
+        public void LoadGame()
+        {
+            ControlChangeScenes.Instance.LoadGame();
+        }
+
         public void SaveGame() {
 
-            ControlChangeScenes.Instance.SaveNewGame();
+            ControlChangeScenes.Instance.SaveGame();
         }
     }
 }

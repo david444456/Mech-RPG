@@ -132,6 +132,7 @@ namespace RPG.Movement
         {
             //get the mouse position
             Vector3 worldPosition = GetMouseWorldPosition();
+            print("rotate " + worldPosition);
 
             //normalize this direction, substract with my actual position
             Vector3 direction = Vector3.Normalize(worldPosition - transform.position);
@@ -142,6 +143,7 @@ namespace RPG.Movement
             {
                 RotatePlayerToPosition(direction);
             }
+
         }
 
         #region private function
@@ -152,7 +154,7 @@ namespace RPG.Movement
 
         private Vector3 GetMouseWorldPosition() {
             Ray ray = GetMouseRay();
-            if (Physics.Raycast(ray, out RaycastHit raycastHit, 100)) {
+            if (Physics.Raycast(ray, out RaycastHit raycastHit, 200)) {
                 return raycastHit.point;
             }
             return transform.position;

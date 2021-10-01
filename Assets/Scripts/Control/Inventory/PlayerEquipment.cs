@@ -24,9 +24,9 @@ namespace RPG.Inventory
 
         GameObject[] _GlovesGO;
 
-        GameObject[] _PantsGORight;
+        GameObject[] _PantsGO;
 
-        GameObject[] _BootsGORight;
+        GameObject[] _BootsGO;
 
         ItemInventory itemHat;
         ItemInventory itemFront;
@@ -49,8 +49,8 @@ namespace RPG.Inventory
 
             _chestGO = new GameObject[_chestPosition.Length];
             _GlovesGO = new GameObject[_GlovesPosition.Length];
-            _PantsGORight = new GameObject[_PantsPosition.Length];
-            _BootsGORight = new GameObject[_BootsPosition.Length];
+            _PantsGO = new GameObject[_PantsPosition.Length];
+            _BootsGO = new GameObject[_BootsPosition.Length];
         }
 
         public void AddNewEquipmentToPlayer(ItemInventory itemInventory) {
@@ -83,9 +83,11 @@ namespace RPG.Inventory
                     break;
                 case TypeArmor.Pants:
                     ChangeNewArmor(ref itemPants, itemInventory, value);
+                    ChangeArmorGameObject(itemInventory, _PantsPosition, _PantsGO, value);
                     break;
                 case TypeArmor.Boots:
                     ChangeNewArmor(ref itemBoots, itemInventory, value);
+                    ChangeArmorGameObject(itemInventory, _BootsPosition, _BootsGO, value);
                     break;
             }
         }

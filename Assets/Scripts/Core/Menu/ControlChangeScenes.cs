@@ -42,7 +42,12 @@ public class ControlChangeScenes : MonoBehaviour
         SceneManager.LoadScene(0);
     }
 
-    public void SaveNewGame() {
+    public void LoadGame()
+    {
+        savingWrapper.Load();
+    }
+
+    public void SaveGame() {
         savingWrapper.Save();
         StartCoroutine(ChangeVisibilitySavingUI());
     }

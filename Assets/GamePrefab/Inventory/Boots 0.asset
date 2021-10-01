@@ -20,3 +20,8 @@ MonoBehaviour:
   _spriteImageInInventory: {fileID: 5830047445668290316, guid: d0499d22d89ef0a48a8576c94d377a73, type: 3}
   _typeArmor: 3
   _valueArmor: 20
+  _gameObjectsArmor:
+  - {fileID: 5358804898078120476, guid: 260a88f429f18fe4e8bacf1be21bcaee, type: 3}
+  - {fileID: 7448431714723447551, guid: f2efd89d92aeaf24c8b6c6c2f63edfe1, type: 3}
+  - {fileID: 5358804898078120476, guid: 260a88f429f18fe4e8bacf1be21bcaee, type: 3}
+  - {fileID: 7448431714723447551, guid: f2efd89d92aeaf24c8b6c6c2f63edfe1, type: 3}
