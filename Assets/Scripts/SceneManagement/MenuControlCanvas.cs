@@ -19,10 +19,20 @@ namespace RPG.SceneManagement {
         [SerializeField] Progression progressionMedium;
         [SerializeField] Progression progressionHard;
 
+        private bool isStartedANewGame = false;
+
+        private void Update()
+        {
+            if (Input.GetKey(KeyCode.Space) && isStartedANewGame) {
+                StartNewGameFunctions();
+            }
+        }
+
         public void StartNewGame()
         {
             PlayerInformationBetweenScenes.gameManager.UpdateInformationStartNewGame(progressionMedium);
             startNewGame.Invoke();
+            isStartedANewGame = true;
             StartCoroutine(StartGameByTime(timeToStartGame));
         }
 
@@ -35,8 +45,14 @@ namespace RPG.SceneManagement {
             Application.Quit();
         }
 
-        IEnumerator StartGameByTime(float time) {
+        IEnumerator StartGameByTime(float time)
+        {
             yield return new WaitForSeconds(time);
+            StartNewGameFunctions();
+        }
+
+        private void StartNewGameFunctions()
+        {
             ControlChangeScenes.Instance.StartNewGame();
             portal.StartTransition();
         }

@@ -62,12 +62,12 @@ namespace RPG.Inventory
         public bool InteractWithInventory() {
             bool interact = GOInventory.activeSelf;
 
-            if (Input.GetKey(KeyCode.B) && !interact)
+            if (Input.GetKeyDown(KeyCode.B) && !interact)
             {
                 GOInventory.SetActive(true);
                 interact = true;
             }
-            else if(interact && Input.GetKey(KeyCode.Escape)) {
+            else if(interact && Input.GetKey(KeyCode.Escape) || Input.GetKeyDown(KeyCode.B)) {
                 GOInventory.SetActive(false);
                 interact = false;
             }
@@ -102,6 +102,7 @@ namespace RPG.Inventory
         #region Save function
         public object CaptureState()
         {
+            inventory = new Inventory(largeInventory);
             List<ItemInventory> listItems = inventory.GetItemInventories();
             int[] g = new int[inventory.GetTotalItems()];
 

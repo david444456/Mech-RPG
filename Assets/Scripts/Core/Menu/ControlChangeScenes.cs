@@ -44,7 +44,7 @@ public class ControlChangeScenes : MonoBehaviour
 
     public void LoadGame()
     {
-        savingWrapper.Load();
+        savingWrapper.loadRestartScene();
     }
 
     public void SaveGame() {

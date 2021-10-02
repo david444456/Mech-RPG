@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8445f75be38735341b7d00bc91e78560, type: 3}
+  m_Name: Dialog 0
+  m_EditorClassIdentifier: 
+  structConversations:
+  - TextConversation: Hola que tal Juan Carlos
+    _typeDialog: 0
+  - TextConversation: NOOOOOOOOOOOOOOOO
+    _typeDialog: 1
+  spriteTypeAI: {fileID: 21300000, guid: f76f4d3626636f348be3e48369b10f00, type: 3}
+  spriteTypeSlava: {fileID: 21300000, guid: 514ebe56d860f3440bc74c7e6a9eaf7d, type: 3}
