@@ -17,6 +17,10 @@ namespace RPG.Inventory
             _countItems = 0;
         }
 
+        public int GetTotalItems() => _countItems;
+
+        public List<ItemInventory> GetItemInventories() => itemInventories;
+
         public bool CanAddOtherItem() => _countItems < itemInventories.Count;
 
         public int GetEmptySlotIndex()
@@ -33,6 +37,7 @@ namespace RPG.Inventory
 
         public void AddNewItem(ItemInventory itemInventory, int index) {
             itemInventories[index] = itemInventory;
+            _countItems++;
         }
     }
 }

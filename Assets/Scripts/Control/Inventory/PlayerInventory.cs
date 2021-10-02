@@ -1,3 +1,4 @@
+using RPG.Saving;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -5,7 +6,7 @@ using UnityEngine.UI;
 
 namespace RPG.Inventory
 {
-    public class PlayerInventory : MonoBehaviour
+    public class PlayerInventory : MonoBehaviour, ISaveable
     {
         [SerializeField] GameObject uiButton = null;
         [SerializeField] int distance = 10;
@@ -23,7 +24,8 @@ namespace RPG.Inventory
 
         private void Start()
         {
-            inventory = new Inventory(largeInventory);
+            if(inventory == null)
+                inventory = new Inventory(largeInventory);
         }
 
         void Update()
@@ -73,7 +75,6 @@ namespace RPG.Inventory
             return interact;
         }
 
-
         public bool IsTheInventoryActive() => GOInventory.activeSelf;
 
         private void SaveNewItemInventory(ItemInventory _itemInventory) {
@@ -96,5 +97,42 @@ namespace RPG.Inventory
         }
 
         private bool CanAddOtherItemToInventory() => inventory.CanAddOtherItem();
+
+
+        #region Save function
+        public object CaptureState()
+        {
+            List<ItemInventory> listItems = inventory.GetItemInventories();
+            int[] g = new int[inventory.GetTotalItems()];
+
+            int count = 0;
+            print(inventory.GetTotalItems());
+
+            for (int i = 0; i < listItems.Count; i++) {
+                if (listItems[i] != null) {
+                    g[count] = listItems[i].GetActualIndexItem();
+                    count++;
+                }
+            }
+
+            return g;
+        }
+
+        public void RestoreState(object state)
+        {
+            ControlTypeItem controlTypeItem = FindObjectOfType<ControlTypeItem>();
+
+            int[] index = (int[])state;
+
+            inventory = new Inventory(largeInventory);
+
+            for (int i = 0; i < index.Length; i++) {
+                ItemInventory item = controlTypeItem.GetTypeItemByIndex(index[i]);
+                SaveNewItemInventory(item);
+            }
+
+            print(index.Length);
+        }
+        #endregion
     }
 }

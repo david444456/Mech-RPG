@@ -132,7 +132,6 @@ namespace RPG.Movement
         {
             //get the mouse position
             Vector3 worldPosition = GetMouseWorldPosition();
-            print("rotate " + worldPosition);
 
             //normalize this direction, substract with my actual position
             Vector3 direction = Vector3.Normalize(worldPosition - transform.position);

@@ -1,12 +1,13 @@
 using RPG.Attributes;
 using RPG.Combat;
+using RPG.Saving;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 namespace RPG.Inventory
 {
-    public class PlayerEquipment : MonoBehaviour
+    public class PlayerEquipment : MonoBehaviour, ISaveable
     {
         [Header("Chest")]
         [SerializeField] Transform[] _chestPosition;
@@ -39,22 +40,30 @@ namespace RPG.Inventory
         FighterPlayer fighterPlayer;
         PlayerUI playerUI;
 
-        void Start()
-        {
+        void Awake (){
             healthPlayer = GetComponent<HealthPlayer>();
             fighterPlayer = GetComponent<FighterPlayer>();
             playerUI = GetComponent<PlayerUI>();
 
-            UpdateTextStatsInventory();
 
             _chestGO = new GameObject[_chestPosition.Length];
             _GlovesGO = new GameObject[_GlovesPosition.Length];
             _PantsGO = new GameObject[_PantsPosition.Length];
             _BootsGO = new GameObject[_BootsPosition.Length];
+
+        }
+
+        void Start()
+        {
+
+
+            UpdateTextStatsInventory();
+
         }
 
         public void AddNewEquipmentToPlayer(ItemInventory itemInventory) {
             print("Add equip");
+            if (itemInventory == null) return;
             if (itemInventory.GetTypeItemInventory() == TypeItemInventory.Armor) FindItemAndChangeArmor(itemInventory, false);
             else AddNewWeapon(itemInventory);
 
@@ -97,9 +106,9 @@ namespace RPG.Inventory
             for (int i = 0; i < GOposition.Length; i++)
             {
                 if (!value)
-                    GOSaveArmor[0] = Instantiate(itemInventory.GetGameObjectsArmor()[i], GOposition[i].transform);
+                    GOSaveArmor[i] = Instantiate(itemInventory.GetGameObjectsArmor()[i], GOposition[i].transform);
                 else
-                    Destroy(GOSaveArmor[0]);
+                    Destroy(GOSaveArmor[i]);
             }
         }
 
@@ -165,5 +174,37 @@ namespace RPG.Inventory
                 healthPlayer.GetInitialHealth(),
                 healthPlayer.GetArmor());
         }
+
+        #region Save function
+        public object CaptureState()
+        {
+
+            int[] g = { 0,0,0,0,0 };
+
+            if(itemHat!= null) g[0] = itemHat.GetActualIndexItem();
+            if (itemFront != null) g[1] = itemFront.GetActualIndexItem();
+            if (itemPants != null) g[2] = itemPants.GetActualIndexItem();
+            if (itemBoots != null) g[3] = itemBoots.GetActualIndexItem();
+            if (itemWeapon != null) g[4] = itemWeapon.GetActualIndexItem();
+
+
+            return g;
+        }
+
+        public void RestoreState(object state)
+        {
+            ControlTypeItem controlTypeItem = FindObjectOfType<ControlTypeItem>();
+            int[] index = (int[])state;
+
+            AddNewEquipmentToPlayer(controlTypeItem.GetTypeItemByIndex(index[0]));
+            AddNewEquipmentToPlayer(controlTypeItem.GetTypeItemByIndex(index[1]));
+            AddNewEquipmentToPlayer(controlTypeItem.GetTypeItemByIndex(index[2]));
+            AddNewEquipmentToPlayer(controlTypeItem.GetTypeItemByIndex(index[3]));
+            AddNewEquipmentToPlayer(controlTypeItem.GetTypeItemByIndex(index[4]));
+
+
+            print(index.Length);
+        }
+        #endregion
     }
 }

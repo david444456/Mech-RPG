@@ -147,6 +147,7 @@ GameObject:
   - component: {fileID: 6202542986188115714}
   - component: {fileID: 8019153180774547738}
   - component: {fileID: 2284543103570206807}
+  - component: {fileID: 463876895601696490}
   m_Layer: 0
   m_Name: Manager
   m_TagString: Untagged
@@ -339,6 +340,25 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   savingWrapper: {fileID: 7805771520843134202}
   CanvasPersistingGO: {fileID: 6171072834055665632}
+--- !u!114 &463876895601696490
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3983949088548420269}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 52ea409cabb610441b667cd8fb0afde5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  allItems:
+  - {fileID: 11400000, guid: 975a7b6cd5da8ca409615d8d9840cca1, type: 2}
+  - {fileID: 11400000, guid: 24eca27f3e5506744af4b72ab6bc2413, type: 2}
+  - {fileID: 11400000, guid: 47883779361c82c438371a0239cc78d9, type: 2}
+  - {fileID: 11400000, guid: 7ccf6a563aacfce49a4bd9d7553f4464, type: 2}
+  - {fileID: 11400000, guid: eb55e70cccc846f4dbe1810fd1af24f0, type: 2}
+  - {fileID: 11400000, guid: 711e15f8020f22b44bbac679662a9b23, type: 2}
 --- !u!1 &6171072834055665632
 GameObject:
   m_ObjectHideFlags: 0

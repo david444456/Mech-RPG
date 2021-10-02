@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 432d151084e927f49ae4d990885b205d, type: 3}
   m_Name: Wea 0
   m_EditorClassIdentifier: 
-  _index: 2
+  _index: 5
   _typeItemInventory: 0
   _gameObjectToSpawn: {fileID: 8316922619042379477, guid: c3891657a3f420e45896d751f78896a5, type: 3}
   _nameItem: Weapon

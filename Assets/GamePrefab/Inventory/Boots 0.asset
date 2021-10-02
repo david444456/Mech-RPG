@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba9a55d15958af74f8d887a973bd034f, type: 3}
   m_Name: Boots 0
   m_EditorClassIdentifier: 
-  _index: 0
+  _index: 4
   _typeItemInventory: 1
   _gameObjectToSpawn: {fileID: 5280461700867230179, guid: f2a90b292e7b09640b3632f068e8ee14, type: 3}
   _nameItem: Boots
