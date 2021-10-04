@@ -32,7 +32,7 @@ namespace RPG.Control
     [Serializable]
     public class structConversation
     {
-        [TextArea] public string TextConversation;
+        [TextArea (6,14)] public string TextConversation;
         public TypeDialog _typeDialog;
     }
 

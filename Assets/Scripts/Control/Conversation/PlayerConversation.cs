@@ -1,3 +1,4 @@
+using RPG.Movement;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -34,7 +35,7 @@ namespace RPG.Control
         {
             if (uiButton.activeSelf)
             {
-                if (Input.GetKeyDown(KeyCode.E))
+                if (Input.GetKeyDown(KeyCode.E) || aIConversation.GetIfWorksWithTouchItem())
                 {
                     uiButton.SetActive(false);
                     lastConversation = aIConversation.GetConversation();
@@ -45,6 +46,7 @@ namespace RPG.Control
 
                     //start with the conversation
                     _conversationActive = true;
+                    GetComponent<MoverPlayer>().StopMoveChangeAnimation();
                     ShowConversationText();
                     ChangeStateConversation(true);
                 }

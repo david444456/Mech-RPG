@@ -9,7 +9,9 @@ namespace RPG.Core {
     public class LevelManager : MonoBehaviour
     {
 
-
+        public void WinLevel() {
+            print("Win");
+        }
 
         public void RestartScenes() {
             ControlChangeScenes.Instance.restartScene();

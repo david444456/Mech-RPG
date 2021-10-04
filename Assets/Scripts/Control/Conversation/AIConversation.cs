@@ -6,15 +6,24 @@ using UnityEngine.Events;
 namespace RPG.Control {
     public class AIConversation : MonoBehaviour
     {
-        [SerializeField] UnityEvent _eventActiveThisConversation;
+        [SerializeField] UnityEvent _eventActiveThisConversation = new UnityEvent();
         [SerializeField] Conversation conversation;
+        [SerializeField] bool worksWithTouchItem = false;
+
+        private bool thisIsUsed = false;
 
         void Start()
         {
-            _eventActiveThisConversation = new UnityEvent();
+
         }
 
-        public void ActiveConversation() => _eventActiveThisConversation.Invoke();
+        public bool GetIfWorksWithTouchItem() => worksWithTouchItem;
+
+        public void ActiveConversation() {
+            print("Miau");
+            GetComponent<Collider>().enabled = false;
+            _eventActiveThisConversation.Invoke();
+        }
 
         public Conversation GetConversation() => conversation;
     }

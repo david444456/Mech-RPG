@@ -24,9 +24,12 @@ namespace RPG.Control
         public void StartWithMission() {
             //animation
             _UIGOMission.SetActive(true);
+            _missionText.text = _stringMissionInfo[0];
+
         }
 
         public void NextMission() {
+            countMission++;
             //animation
             if (countMission < _stringMissionInfo.Length) {
                 _missionText.text = _stringMissionInfo[countMission];

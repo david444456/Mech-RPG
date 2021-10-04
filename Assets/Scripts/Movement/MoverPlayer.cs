@@ -42,7 +42,7 @@ namespace RPG.Movement
 
         public override void Update()
         {
-            if(health.IsDead()) navMeshAgent.enabled = health.IsDead();
+            if (health.IsDead()) navMeshAgent.enabled = health.IsDead();
         }
 
         public bool InteractWithMovement()
@@ -78,7 +78,7 @@ namespace RPG.Movement
                 Math.Abs(moveDirection.x - _lastMoveDirection.x),
                 Math.Abs(moveDirection.z - _lastMoveDirection.y));
 
-            playerController.AcelerationMovement = (-1)*(newAceleration.x + newAceleration.y)*_multiplyDeaceleration;
+            playerController.AcelerationMovement = (-1) * (newAceleration.x + newAceleration.y) * _multiplyDeaceleration;
             _lastMoveDirection = new Vector2(moveDirection.x, moveDirection.z);
 
             //move with moveDirection
@@ -135,7 +135,7 @@ namespace RPG.Movement
 
             //normalize this direction, substract with my actual position
             Vector3 direction = Vector3.Normalize(worldPosition - transform.position);
-            direction = new Vector3(direction.x, 0 , direction.z);
+            direction = new Vector3(direction.x, 0, direction.z);
 
             //look at this place
             if (direction != Vector3.zero)
@@ -144,6 +144,8 @@ namespace RPG.Movement
             }
 
         }
+
+        public void StopMoveChangeAnimation() => animator.SetFloat("forwardSpeed", 0);
 
         #region private function
 

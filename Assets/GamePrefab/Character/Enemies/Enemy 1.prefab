@@ -1358,6 +1358,10 @@ PrefabInstance:
       propertyPath: OnDie.m_PersistentCalls.m_Calls.Array.data[5].m_Arguments.m_BoolArgument
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 626087017123565022, guid: f1d19dc6e947952488c3e088714f8ba3, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 83a80e87e50574f4ab99844298a2af2d, type: 3}
     - target: {fileID: 1419228799297898456, guid: f1d19dc6e947952488c3e088714f8ba3, type: 3}
       propertyPath: m_Name
       value: Enemy 1

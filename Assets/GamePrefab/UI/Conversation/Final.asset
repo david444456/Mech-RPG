@@ -10,31 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8445f75be38735341b7d00bc91e78560, type: 3}
-  m_Name: StartMission
+  m_Name: Final
   m_EditorClassIdentifier: 
   structConversations:
-  - TextConversation: "Prepare to land. Disembark\r\nwith Robotnika approved supplies.\r"
+  - TextConversation: It's been so many years since the war, my body is broken, my
+      own gears are close to rust and ruin. Protect this baby at all costs!
     _typeDialog: 0
-  - TextConversation: "I am FPA-1701. Special Limb\r\nAdjustable Vector Android No.
-      17,\r\nrespond.\r"
-    _typeDialog: 0
-  - TextConversation: 'SLAVA unit No. 17 is ready. What is
-
-      my task?'
-    _typeDialog: 1
-  - TextConversation: 'Robotnika City signals detected a
-
-      distress beacon
-      at these
-
-      coordinates when we landed. Go and
-
-      investigate the
-      location alone and respond
-
-      what are you see.'
-    _typeDialog: 0
-  - TextConversation: Understood
+  - TextConversation: Goodbye Doctor, I will comply with this last command...to protect
+      life.
     _typeDialog: 1
   spriteTypeAI: {fileID: 21300000, guid: f76f4d3626636f348be3e48369b10f00, type: 3}
   spriteTypeSlava: {fileID: 21300000, guid: 514ebe56d860f3440bc74c7e6a9eaf7d, type: 3}
