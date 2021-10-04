@@ -225,7 +225,7 @@ PrefabInstance:
     - target: {fileID: 1697752676635361591, guid: f1d19dc6e947952488c3e088714f8ba3, type: 3}
       propertyPath: m_audioClip
       value: 
-      objectReference: {fileID: 8300000, guid: c96e3f74e5c59c1468b608149c897074, type: 3}
+      objectReference: {fileID: 8300000, guid: 0c7f93c9f01ea354081dadf4128c47cb, type: 3}
     - target: {fileID: 2432047182796314354, guid: f1d19dc6e947952488c3e088714f8ba3, type: 3}
       propertyPath: nameCharacter
       value: TRHG65

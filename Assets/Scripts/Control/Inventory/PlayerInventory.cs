@@ -22,6 +22,8 @@ namespace RPG.Inventory
         ItemPickup itemPickup;
         Inventory inventory;
 
+        private int _internalCountCards = 0;
+
         private void Start()
         {
             if(inventory == null)
@@ -77,18 +79,34 @@ namespace RPG.Inventory
 
         public bool IsTheInventoryActive() => GOInventory.activeSelf;
 
+        public void MoveFromSlotToOtherSlot(ItemInventory _itemInventory, int slotFrom, int slotDest) {
+            print(_itemInventory+ " " +  slotFrom+" "+  slotDest);
+            //remove from inventory
+            inventory.RemoveItemSite(slotFrom);
+
+            //add item to inventory
+            inventory.AddNewItem(_itemInventory, slotDest);
+        }
+
         private void SaveNewItemInventory(ItemInventory _itemInventory) {
             int indexEmpty = inventory.GetEmptySlotIndex();
             if (indexEmpty < 0) return;
 
             //change ui
 
-            _cardsImages[indexEmpty].gameObject.SetActive(true);
-            _cardsImages[indexEmpty].gameObject.GetComponent<UIControlTypeInventoryItem>().SetItemInventory(_itemInventory);
-            _cardsImages[indexEmpty].sprite = _itemInventory.GetSpriteInventory();
-            _cardsImages[indexEmpty].transform.SetParent(_slotsImages[indexEmpty].transform);
+            //cards
+            _cardsImages[_internalCountCards].rectTransform.anchoredPosition = _slotsImages[indexEmpty].rectTransform.anchoredPosition;
+
+            _cardsImages[_internalCountCards].gameObject.SetActive(true);
+            _cardsImages[_internalCountCards].gameObject.GetComponent<UIControlTypeInventoryItem>().SetItemInventory(_itemInventory);
+            _cardsImages[_internalCountCards].sprite = _itemInventory.GetSpriteInventory();
+            _cardsImages[_internalCountCards].transform.SetParent(_slotsImages[indexEmpty].transform);
+
+            //slots
             _slotsImages[indexEmpty].GetComponent<CardSlotDrapDetection>().
-                AddNewCardItemFromPlayerInventory(_cardsImages[indexEmpty].gameObject);
+                AddNewCardItemFromPlayerInventory(_cardsImages[_internalCountCards].gameObject);
+
+            _internalCountCards++;
 
             //notify the slot that i put one card inside him
 

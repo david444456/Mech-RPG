@@ -11,6 +11,7 @@ namespace RPG.Inventory
     {
         public Action<ItemInventory> EventShareNewItemInventory = delegate { };
 
+        [SerializeField] int indexSlot = 0;
         [SerializeField] Vector2 newAnchorerPositionCard = new Vector2(-15, -20);
         [SerializeField] Vector2 anchorsPivotCard = new Vector2(0.5f, 0.5f);
         [SerializeField] bool itIsSlot = false;
@@ -19,6 +20,8 @@ namespace RPG.Inventory
 
         UIDrapControlTypeInventory uIDrapControlType;
         GameObject _lastItemCardInThisSlot;
+
+        public int GetIndexSlot() => indexSlot;
 
         void Start()
         {
@@ -40,10 +43,16 @@ namespace RPG.Inventory
                     if (!itIsSlot) EventShareNewItemInventory.Invoke(
                         eventData.pointerDrag.GetComponent<UIControlTypeInventoryItem>().GetItemInventory());
                     else if (worksForEliminatedThings) EliminatedObjectThatDropInThisObject();
+                    //call to notify to the inventory
+                    else FindObjectOfType<PlayerInventory>().MoveFromSlotToOtherSlot(
+                        eventData.pointerDrag.GetComponent<UIControlTypeInventoryItem>().GetItemInventory(),
+                        eventData.pointerDrag.GetComponentInParent<CardSlotDrapDetection>().GetIndexSlot(),
+                        indexSlot);
 
                     //set item in parent position
                     eventData.pointerDrag.transform.SetParent(this.transform);
 
+                    //set ui
                     RectTransform rectTransformItem = eventData.pointerDrag.GetComponent<RectTransform>();
 
                     rectTransformItem.pivot = anchorsPivotCard;

@@ -55,6 +55,7 @@ namespace RPG.Control
         MoverPlayer mover;
         PlayerUI playerUI;
         PlayerInventory playerInventory;
+        PlayerConversation playerConversation;
 
         //delete
         RaycastHit[] hits;
@@ -82,6 +83,7 @@ namespace RPG.Control
             health = GetComponent<Health>();
             playerUI = GetComponent<PlayerUI>();
             playerInventory = GetComponent<PlayerInventory>();
+            playerConversation = GetComponent<PlayerConversation>();
         }
 
         private void Start()
@@ -91,6 +93,9 @@ namespace RPG.Control
             {
                 playableDirector.PlayTimeline();
             }
+
+            playerConversation.EventStateConversation += ChangeStateCantMoveThings;
+
         }
 
         void Update()
@@ -99,6 +104,8 @@ namespace RPG.Control
 
             InteractWithMouse();
             if (InteractWithPauseMenu()) return;
+            if (playerConversation.InteractWithConversation()) return;
+
             //if (useMap) if (InteractWithMap()) return;
             //if (InteractWithUI()) return;
 
@@ -109,12 +116,11 @@ namespace RPG.Control
             if (CantMoveDirection) return; //this is for animator (pray, takeItem)
 
             if (fighter.IntectWithCombat()) return; 
-
         }
 
         private void LateUpdate()
         {
-            MoveCameraAroundThePlayer();
+            //MoveCameraAroundThePlayer();
             if (health.IsDead()) return;          
             if (CantMoveDirection) return;
             if (mover.InteractWithMovement())
@@ -300,6 +306,11 @@ namespace RPG.Control
         {
             CursoMapping mapping = GetCursoMapping(cursor);
             Cursor.SetCursor(mapping.texture, mapping.hotspot, CursorMode.Auto);
+        }
+
+        private void ChangeStateCantMoveThings(bool newState)
+        {
+            CantMoveDirection = newState;
         }
 
         private static Ray GetMouseRay()

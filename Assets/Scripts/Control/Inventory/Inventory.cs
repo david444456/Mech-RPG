@@ -35,6 +35,11 @@ namespace RPG.Inventory
             return index;
         }
 
+        public void RemoveItemSite(int index) {
+            itemInventories[index] = null;
+            _countItems--;
+        }
+
         public void AddNewItem(ItemInventory itemInventory, int index) {
             itemInventories[index] = itemInventory;
             _countItems++;

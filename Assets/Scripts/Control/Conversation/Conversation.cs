@@ -20,6 +20,8 @@ namespace RPG.Control
             return GetSpriteByType(structConversations[index]._typeDialog);
         }
 
+        public int GetLimitTextConversations() => structConversations.Length;
+
         private Sprite GetSpriteByType(TypeDialog typeDialog)
         {
             if (typeDialog == TypeDialog.AI) return spriteTypeAI;
