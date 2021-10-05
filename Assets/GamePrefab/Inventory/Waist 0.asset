@@ -15,8 +15,10 @@ MonoBehaviour:
   _index: 1
   _typeItemInventory: 1
   _gameObjectToSpawn: {fileID: 5280461700867230179, guid: a82143671195b97448611caf4f7ed583, type: 3}
-  _nameItem: Hat amazing
-  description: This is a amazing waist
+  _nameItem: 'Blue Bolt MK I: Omniartus Waist'
+  description: A homebrewed improvement that allows S.L.A.V.A units to have unlimited
+    limbic modularity provided third-party assistance can synchronize with foreign
+    limbs.
   _spriteImageInInventory: {fileID: 21300000, guid: a0d48263d91295547a5859ead7a600a4, type: 3}
   _typeArmor: 2
   _valueArmor: 20

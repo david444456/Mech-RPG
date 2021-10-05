@@ -15,9 +15,11 @@ MonoBehaviour:
   _index: 4
   _typeItemInventory: 1
   _gameObjectToSpawn: {fileID: 5280461700867230179, guid: f2a90b292e7b09640b3632f068e8ee14, type: 3}
-  _nameItem: Boots
-  description: This is a amazing waist
-  _spriteImageInInventory: {fileID: 5830047445668290316, guid: d0499d22d89ef0a48a8576c94d377a73, type: 3}
+  _nameItem: 'Blue Bolt MK I: Combat Legs'
+  description: 'Modeled after S.F.I. Boots: these hardwired legs, when integrated
+    with the Omniartus Waist, allow for more dynamic and fluid movement to aid in
+    defense...and offense.'
+  _spriteImageInInventory: {fileID: 21300000, guid: 4cb2be1bae526414092f4f1da93c5d94, type: 3}
   _typeArmor: 3
   _valueArmor: 20
   _gameObjectsArmor:

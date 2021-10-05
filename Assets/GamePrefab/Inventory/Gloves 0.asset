@@ -15,8 +15,11 @@ MonoBehaviour:
   _index: 3
   _typeItemInventory: 1
   _gameObjectToSpawn: {fileID: 5280461700867230179, guid: ac5663368dee3d94f8fcd66cbb616521, type: 3}
-  _nameItem: Boots
-  description: This is a amazing waist
+  _nameItem: 'Blue Bolt Prototype: Battle Gauntlets'
+  description: A Prototype full replacement of S.L.A.V.A unit arms. Rather than aid
+    in the mere carrying of objects, the Blue Bolt proprietary systems identify parallel
+    combat uses for a held object, and then accesses advanced technical combat skills
+    applicable to the held object.
   _spriteImageInInventory: {fileID: 21300000, guid: 5bc54f2160a9c204c97ab880bc912c97, type: 3}
   _typeArmor: 0
   _valueArmor: 20

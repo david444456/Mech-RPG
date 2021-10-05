@@ -1422,6 +1422,14 @@ PrefabInstance:
       propertyPath: m_IsKinematic
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4595404360534784198, guid: f1d19dc6e947952488c3e088714f8ba3, type: 3}
+      propertyPath: m_RootOrder
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 4595404360534784198, guid: f1d19dc6e947952488c3e088714f8ba3, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.292
+      objectReference: {fileID: 0}
     - target: {fileID: 4993821601577730367, guid: f1d19dc6e947952488c3e088714f8ba3, type: 3}
       propertyPath: uniqueIdentifier
       value: 54bffdda-60b6-4093-ad44-064ceb05b8e5

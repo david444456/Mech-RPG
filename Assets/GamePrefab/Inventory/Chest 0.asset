@@ -15,9 +15,11 @@ MonoBehaviour:
   _index: 2
   _typeItemInventory: 1
   _gameObjectToSpawn: {fileID: 5280461700867230179, guid: 525d5fce30b3a254f8d67717b88e3f31, type: 3}
-  _nameItem: Chest
-  description: This is a amazing chest
-  _spriteImageInInventory: {fileID: 7237501223668211569, guid: d0499d22d89ef0a48a8576c94d377a73, type: 3}
+  _nameItem: 'Blue Bolt MK I: Imperator Chestplate'
+  description: Due to S.L.A.V.A. units having light chestplate, the Imperator modifaction
+    adds ergonomics to a unit's torso to allow for physical projectiles and blows
+    to glance off.
+  _spriteImageInInventory: {fileID: 21300000, guid: daaf2ceb1541b454c917ad11f74e1248, type: 3}
   _typeArmor: 1
   _valueArmor: 20
   _gameObjectsArmor:

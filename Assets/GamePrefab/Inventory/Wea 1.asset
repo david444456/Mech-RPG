@@ -15,7 +15,9 @@ MonoBehaviour:
   _index: 6
   _typeItemInventory: 0
   _gameObjectToSpawn: {fileID: 8316922619042379477, guid: 2fe14b46920d05c49a59a4468dc3def2, type: 3}
-  _nameItem: Weapon
-  description: 
-  _spriteImageInInventory: {fileID: 7167833364569699005, guid: d0499d22d89ef0a48a8576c94d377a73, type: 3}
+  _nameItem: Detached Pipe
+  description: Using a S.L.A.V.A. unit integrated bolt drill, blunt implements can
+    earn a penetrative property. Despite permanently altering the base object, it
+    is a fine combat implement.
+  _spriteImageInInventory: {fileID: 21300000, guid: 8a1e5fbcff920f54282ef382d420fbb4, type: 3}
   _weaponConfig: {fileID: 11400000, guid: 22fb705e70d040946aa81e42476599f3, type: 2}

@@ -13,7 +13,7 @@ namespace RPG.Inventory
 
         public override string GetInfoItemString()
         {
-            string damage = _weaponConfig.AttackArea ? _weaponConfig.weaponDamage.ToString() : _weaponConfig.damageArea.ToString();
+            string damage = _weaponConfig.AttackArea ?  _weaponConfig.damageArea.ToString() : _weaponConfig.weaponDamage.ToString();
             string textInfo = "Name: " + _nameItem + "\n" +
                               "Damage: " + damage + "\n" +
                               "Description: " + description;

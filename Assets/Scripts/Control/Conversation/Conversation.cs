@@ -11,6 +11,7 @@ namespace RPG.Control
         [SerializeField] structConversation[] structConversations;
         [SerializeField] Sprite spriteTypeAI;
         [SerializeField] Sprite spriteTypeSlava;
+        [SerializeField] Sprite spriteTypeNone;
 
         public string GetTextForConversationByIndex(int index) {
             return structConversations[index].TextConversation;
@@ -25,6 +26,7 @@ namespace RPG.Control
         private Sprite GetSpriteByType(TypeDialog typeDialog)
         {
             if (typeDialog == TypeDialog.AI) return spriteTypeAI;
+            else if (typeDialog == TypeDialog.None) return spriteTypeNone;
             else return spriteTypeSlava;
         }
     }
@@ -39,5 +41,6 @@ namespace RPG.Control
     public enum TypeDialog { 
         AI,
         Slava,
+        None,
     }
 }
