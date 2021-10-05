@@ -16,7 +16,7 @@ MonoBehaviour:
   UniqueIdentifier: 12
   AttackArea: 1
   AttackWithCombo: 1
-  damageArea: 5
+  damageArea: 10
   weaponDamage: 10
   spriteWeapon: {fileID: 21300000, guid: 2f1e0d7aacd0a29489eaa51811c80945, type: 3}
   CooldownAbilities:

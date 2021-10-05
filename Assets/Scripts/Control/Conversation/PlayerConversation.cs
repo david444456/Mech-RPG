@@ -75,7 +75,7 @@ namespace RPG.Control
             //input, change things, bool value
             if (_conversationActive)
             {
-                if (Input.GetKeyDown(KeyCode.RightArrow))
+                if (Input.GetKeyDown(KeyCode.Space))
                 {
                     _activeNextConversation = true;
                 }

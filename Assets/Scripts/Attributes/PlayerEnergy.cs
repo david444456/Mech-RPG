@@ -33,7 +33,7 @@ namespace RPG.Attributes
             }
         }
 
-        public bool CanAttackCostStamina(float costStamina) => stamina > costStamina;
+        public bool CanAttackCostStamina(float costStamina) => true;//stamina > costStamina;
 
         public void augmentStamina(float value)
         {

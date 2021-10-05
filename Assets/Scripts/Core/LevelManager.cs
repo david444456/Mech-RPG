@@ -4,13 +4,24 @@ using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.UI;
 using RPG.Control;
+using UnityEngine.Video;
 
 namespace RPG.Core {
     public class LevelManager : MonoBehaviour
     {
+        [SerializeField] VideoPlayer videoPlayer;
+        [SerializeField] GameObject GODesactiveVideo;
+        [SerializeField] float timeToDesactiveVideo = 15f;
 
         public void WinLevel() {
+            videoPlayer.Play();
+            StartCoroutine(DesactiveVideo());
             print("Win");
+        }
+
+        IEnumerator DesactiveVideo() {
+            yield return new WaitForSeconds(timeToDesactiveVideo);
+            GODesactiveVideo.SetActive(false);
         }
 
         public void RestartScenes() {
