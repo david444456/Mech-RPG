@@ -10,14 +10,21 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8445f75be38735341b7d00bc91e78560, type: 3}
-  m_Name: InteractObstacle
+  m_Name: Op RobotsFeel
   m_EditorClassIdentifier: 
   structConversations:
-  - TextConversation: 'Dr. Alquist: "So there it is, my identity revealed. Find the
-      tunnel to the chamber behind hidden rocks. Your new equipment will help"'
+  - TextConversation: Much before your time, Slava, it was thought we were decades-centuries
+      away from true robot sentience...but Dr. Karel Alquist made rapid breakthroughs.
+      He gathered scientists of all creeds to pursue such a lofty goal.
     _typeDialog: 2
-  - TextConversation: Complied...But there is no cure for sentience, is there?
+  - TextConversation: What was the purpose to create sentience?
     _typeDialog: 1
+  - TextConversation: Dr. Alquist and his colleagues, believed that if given the
+      choice, real choice. The robots would lay their weapons down...And they did,
+      but sentience was considered a ""virus"" so those Robots who could escape being
+      scrapped escaped into the untenable desert wastes and frozen tundras that humanity
+      had made unlivable for themselves.
+    _typeDialog: 2
   spriteTypeAI: {fileID: 21300000, guid: f76f4d3626636f348be3e48369b10f00, type: 3}
   spriteTypeSlava: {fileID: 21300000, guid: 514ebe56d860f3440bc74c7e6a9eaf7d, type: 3}
   spriteTypeNone: {fileID: 21300000, guid: 1381601121cea66498a1202825e24c11, type: 3}

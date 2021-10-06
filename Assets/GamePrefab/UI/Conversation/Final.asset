@@ -15,9 +15,11 @@ MonoBehaviour:
   structConversations:
   - TextConversation: It's been so many years since the war, my body is broken, my
       own gears are close to rust and ruin. Protect this baby at all costs!
-    _typeDialog: 0
+    _typeDialog: 2
   - TextConversation: Goodbye Doctor, I will comply with this last command...to protect
       life.
     _typeDialog: 1
   spriteTypeAI: {fileID: 21300000, guid: f76f4d3626636f348be3e48369b10f00, type: 3}
   spriteTypeSlava: {fileID: 21300000, guid: 514ebe56d860f3440bc74c7e6a9eaf7d, type: 3}
+  spriteTypeNone: {fileID: 21300000, guid: 1381601121cea66498a1202825e24c11, type: 3}
+  spriteTypeBoss: {fileID: 21300000, guid: fcb67afa6d7a412439a05be389a53a3b, type: 3}

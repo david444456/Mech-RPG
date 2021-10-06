@@ -11,7 +11,9 @@ namespace RPG.Core {
     {
         [SerializeField] VideoPlayer videoPlayer;
         [SerializeField] GameObject GODesactiveVideo;
+        [SerializeField] GameObject GODesactiveCredits;
         [SerializeField] float timeToDesactiveVideo = 15f;
+        [SerializeField] float timeToDesactiveCredits = 15f;
 
         public void WinLevel() {
             videoPlayer.Play();
@@ -22,6 +24,8 @@ namespace RPG.Core {
         IEnumerator DesactiveVideo() {
             yield return new WaitForSeconds(timeToDesactiveVideo);
             GODesactiveVideo.SetActive(false);
+            yield return new WaitForSeconds(timeToDesactiveCredits);
+            GODesactiveCredits.SetActive(false);
         }
 
         public void RestartScenes() {

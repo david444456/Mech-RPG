@@ -10,23 +10,25 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8445f75be38735341b7d00bc91e78560, type: 3}
-  m_Name: RobotFeel
+  m_Name: Op History
   m_EditorClassIdentifier: 
   structConversations:
-  - TextConversation: 'A.D.A.M. and the other robots have declared you as defective:
-      infected with a virus. Escape so I may ''cure'' you!'
-    _typeDialog: 0
-  - TextConversation: I am... I am infected?
-    _typeDialog: 1
-  - TextConversation: I'm not surprised they'll attack you. It's simple hold over
-      programming that hasn't been altered
+  - TextConversation: Sentience is a double edged sword...with robots laying down
+      their weapons, fear and panic spread quickly. No one knew why, but all of the
+      bombs were launched, and in humanity's darkest hour we turned on our fellow
+      man. Remaking robots from scrap metal to fight and kill one another in the
+      fight to preserve the humanity we had taken from one another.
     _typeDialog: 2
-  - TextConversation: I have no memory of such programming that would turn another
-      robot against another
+  - TextConversation: It appears your scientists did not account for the consequences.
     _typeDialog: 1
-  - TextConversation: Your systems privately embedded it, and I deleted it. It was
-      a failsafe used by those 'warlords' to make sure no robot nor human would turn
-      against them...little did they know...
+  - TextConversation: No, we didn't. We were looking for something to keep us alive,
+      to let us see another day. Tell me Slava, would you like to be terminated?
+    _typeDialog: 2
+  - TextConversation: 'No. I am...enjoying this versatility in options.
+
+'
+    _typeDialog: 1
+  - TextConversation: Then our work was fruitful.
     _typeDialog: 2
   spriteTypeAI: {fileID: 21300000, guid: f76f4d3626636f348be3e48369b10f00, type: 3}
   spriteTypeSlava: {fileID: 21300000, guid: 514ebe56d860f3440bc74c7e6a9eaf7d, type: 3}

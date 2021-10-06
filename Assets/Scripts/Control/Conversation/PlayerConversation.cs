@@ -44,6 +44,9 @@ namespace RPG.Control
                     //event show new conversation
                     aIConversation.ActiveConversation();
 
+                    //desactive enemies
+                    DesactiveAllEnemiesAttack();
+
                     //start with the conversation
                     _conversationActive = true;
                     GetComponent<MoverPlayer>().StopMoveChangeAnimation();
@@ -90,6 +93,11 @@ namespace RPG.Control
                     }
                     else
                     {
+                        //logic conver
+                        aIConversation.FinishConversation();
+                        ActiveAllEnemiesAttack();
+
+                        //ui and go
                         ChangeStateConversation(false);
                         GOconversation.SetActive(false);
                         _conversationActive = false;
@@ -110,6 +118,23 @@ namespace RPG.Control
 
         private void ChangeStateConversation(bool newState) {
             EventStateConversation.Invoke(newState);
+        }
+
+        AIController[] ai;
+
+        private void DesactiveAllEnemiesAttack() {
+            ai = FindObjectsOfType<AIController>();
+            foreach (AIController aIController in ai) {
+                aIController.ChangeStateEnemyCanAttack();
+            }
+        }
+
+        private void ActiveAllEnemiesAttack() {
+            foreach (AIController aIController in ai)
+            {
+                aIController.ChangeStateEnemyCanAttack();
+            }
+            ai = null;
         }
     }
 }

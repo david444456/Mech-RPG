@@ -15,9 +15,24 @@ MonoBehaviour:
   structConversations:
   - TextConversation: I fear, combat will continue to be inevitable...allow me to
       give you some more 'firepower'.
-    _typeDialog: 0
+    _typeDialog: 2
   - TextConversation: Combat Protocols...downloading...accepted. I am ready to for
       new attachements.
     _typeDialog: 1
+  - TextConversation: Disavow Dr. Karel Alquist, and suffer a lighter termination.
+    _typeDialog: 3
+  - TextConversation: Dr. Alquist, are you sending messages to me?
+    _typeDialog: 1
+  - TextConversation: Yes...I am. Slava, I trust me when I say that A.D.A.M. cannot
+      be trusted.
+    _typeDialog: 2
+  - TextConversation: Can you be trusted , Dr. Alquist?
+    _typeDialog: 1
+  - TextConversation: I will let you choose Slava.
+    _typeDialog: 2
+  - TextConversation: I sense no deceit.
+    _typeDialog: 1
   spriteTypeAI: {fileID: 21300000, guid: f76f4d3626636f348be3e48369b10f00, type: 3}
   spriteTypeSlava: {fileID: 21300000, guid: 514ebe56d860f3440bc74c7e6a9eaf7d, type: 3}
+  spriteTypeNone: {fileID: 21300000, guid: 1381601121cea66498a1202825e24c11, type: 3}
+  spriteTypeBoss: {fileID: 21300000, guid: fcb67afa6d7a412439a05be389a53a3b, type: 3}

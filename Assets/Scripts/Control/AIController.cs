@@ -46,6 +46,7 @@ namespace RPG.Control
         Health health;
         Animator animator;
         private NavMeshAgent navMeshAgent;
+        private bool CantDoSomethingEnemy =false;
 
         Vector3 guardLocation;
         float timeSinceLastSawPlayer = Mathf.Infinity;
@@ -76,6 +77,7 @@ namespace RPG.Control
         private void Update()
         {
             if (health.IsDead()) return;
+            if (CantDoSomethingEnemy) return;
             if (IsAggrevated(player) && fighter.CanAttack(player))
             {
                 //boss enemy
@@ -108,6 +110,10 @@ namespace RPG.Control
             //para optimizar
             //fighter.ChangeActiveColliderWeapon(false);
             animator.SetBool("Hit1", false);
+        }
+
+        public void ChangeStateEnemyCanAttack() {
+            CantDoSomethingEnemy = !CantDoSomethingEnemy;
         }
 
         private void AttackingTrue()
